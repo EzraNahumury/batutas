@@ -1,9 +1,16 @@
-# 🪨📄✂️ BATUTAS
+<p align="center">
+  <img src="./logo.png" alt="BATUTAS logo" width="180" height="180">
+</p>
 
-> A provably-fair, on-chain **Rock–Paper–Scissors** (RPS) mini-game built for **MiniPay** on **Celo Mainnet**.
-> Deposit CELO, play instantly, withdraw anytime — every move is settled and verifiable on-chain.
+<h1 align="center">🪨📄✂️ BATUTAS</h1>
 
-<p align="left">
+<p align="center">
+  <b>A provably-fair, on-chain Rock–Paper–Scissors (RPS) mini-game built for MiniPay on Celo Mainnet.</b>
+  <br/>
+  Deposit CELO, play instantly, withdraw anytime — every move is settled and verifiable on-chain.
+</p>
+
+<p align="center">
   <img alt="Network" src="https://img.shields.io/badge/network-Celo%20Mainnet-35D07F">
   <img alt="Status" src="https://img.shields.io/badge/status-WIP-yellow">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
