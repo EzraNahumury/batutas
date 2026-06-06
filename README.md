@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./logo.png" alt="BATUTAS logo" width="180" height="180">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./logo-bg.png">
+    <img src="./logo.png" alt="BATUTAS logo" width="180" height="180">
+  </picture>
 </p>
 
 <h1 align="center">🪨📄✂️ BATUTAS</h1>
