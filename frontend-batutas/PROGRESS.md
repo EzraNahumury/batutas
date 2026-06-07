@@ -34,3 +34,4 @@
 - [70] polish navbar glassmorphism (pass 2)
 - [71] calibrate feature card hover lift (pass 2)
 - [72] tweak economy divider contrast (pass 2)
+- [73] smooth scroll-reveal stagger (pass 2)
