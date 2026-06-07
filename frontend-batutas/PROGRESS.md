@@ -63,3 +63,4 @@
 - [99] refine outer starfield density (pass 3)
 - [100] polish navbar glassmorphism (pass 3)
 - [onchain] read balance via balanceOf on forno RPC (pass 1)
+- [onchain] derive commit hash with encodePacked uint8+bytes32 (pass 1)
