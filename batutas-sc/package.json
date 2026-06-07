@@ -1,0 +1,19 @@
+{
+  "name": "batutas-sc",
+  "version": "0.1.0",
+  "description": "Provably-fair on-chain Rock-Paper-Scissors smart contracts for BATUTAS (Celo Mainnet, MiniPay-ready).",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network celoSepolia",
+    "deploy:celo": "hardhat run scripts/deploy.ts --network celo"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.17"
+  }
+}
