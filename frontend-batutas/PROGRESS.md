@@ -66,3 +66,4 @@
 - [onchain] derive commit hash with encodePacked uint8+bytes32 (pass 1)
 - [onchain] persist round secret to localStorage for resume (pass 1)
 - [onchain] gate reveal until the next block after commit (pass 1)
+- [onchain] parse Revealed event for house move and result (pass 1)
