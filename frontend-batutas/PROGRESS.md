@@ -85,3 +85,4 @@
 - [onchain] keep card shuffle until move is committed (pass 1)
 - [onchain] verify Celo chainId 42220 across reads (pass 1)
 - [onchain] tidy result banner copy for on-chain deltas (pass 1)
+- [onchain] confirm production build is clean (pass 1)
