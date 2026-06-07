@@ -8,3 +8,4 @@
 - [44] balance lime CTA glow (pass 1)
 - [45] verify mobile has no horizontal scroll (pass 1)
 - [46] a11y: lift eyebrow label contrast (pass 1)
+- [47] a11y: focus-visible rings on controls (pass 1)
