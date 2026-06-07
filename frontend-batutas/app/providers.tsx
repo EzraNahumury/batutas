@@ -6,6 +6,7 @@ import { WagmiProvider } from "wagmi";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import { wagmiConfig } from "./lib/wagmi";
+import MiniPayAutoConnect from "./components/MiniPayAutoConnect";
 
 export default function Providers({
   children,
@@ -27,6 +28,7 @@ export default function Providers({
             overlayBlur: "small",
           })}
         >
+          <MiniPayAutoConnect />
           {children}
         </RainbowKitProvider>
       </QueryClientProvider>
