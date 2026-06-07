@@ -13,3 +13,4 @@
 - [49] refine card flip easing (pass 1)
 - [50] adjust deck slot spacing (pass 1)
 - [51] polish result banner colors (pass 1)
+- [52] check wallet modal accent theme (pass 1)
