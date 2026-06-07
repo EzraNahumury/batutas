@@ -6,3 +6,4 @@
 - [42] tweak economy divider contrast (pass 1)
 - [43] smooth scroll-reveal stagger (pass 1)
 - [44] balance lime CTA glow (pass 1)
+- [45] verify mobile has no horizontal scroll (pass 1)
