@@ -47,3 +47,4 @@
 - [83] verify Celo chain and transports (pass 2)
 - [84] refine deposit/withdraw modal copy (pass 2)
 - [85] align history rows (pass 2)
+- [86] respect prefers-reduced-motion (pass 2)
