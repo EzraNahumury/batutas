@@ -87,3 +87,4 @@
 - [onchain] tidy result banner copy for on-chain deltas (pass 1)
 - [onchain] confirm production build is clean (pass 1)
 - [onchain] recheck Move/Result enum mapping vs contract (pass 1)
+- [onchain] read balance via balanceOf on forno RPC (pass 2)
