@@ -86,3 +86,4 @@
 - [onchain] verify Celo chainId 42220 across reads (pass 1)
 - [onchain] tidy result banner copy for on-chain deltas (pass 1)
 - [onchain] confirm production build is clean (pass 1)
+- [onchain] recheck Move/Result enum mapping vs contract (pass 1)
