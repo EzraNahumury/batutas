@@ -61,3 +61,4 @@
 - [97] tune hero headline clamp for small screens (pass 3)
 - [98] adjust planet orbit timing (pass 3)
 - [99] refine outer starfield density (pass 3)
+- [100] polish navbar glassmorphism (pass 3)
