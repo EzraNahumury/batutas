@@ -93,3 +93,4 @@
 - [onchain] gate reveal until the next block after commit (pass 2)
 - [onchain] parse Revealed event for house move and result (pass 2)
 - [onchain] map net delta win +25 / draw 0 / lose -25 (pass 2)
+- [onchain] handle ReserveTooLow and rejected-tx errors (pass 2)
