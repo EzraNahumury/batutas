@@ -32,3 +32,4 @@
 - [68] adjust planet orbit timing (pass 2)
 - [69] refine outer starfield density (pass 2)
 - [70] polish navbar glassmorphism (pass 2)
+- [71] calibrate feature card hover lift (pass 2)
