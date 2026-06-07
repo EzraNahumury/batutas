@@ -18,3 +18,4 @@
 - [54] refine deposit/withdraw modal copy (pass 1)
 - [55] align history rows (pass 1)
 - [56] respect prefers-reduced-motion (pass 1)
+- [57] size favicon icon (pass 1)
