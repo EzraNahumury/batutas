@@ -13,5 +13,6 @@
     "winPayout": 50
   },
   "verified": false,
-  "notes": "Reserve belum didanai (availableReserve=0); jalankan fundReserve() agar game bisa dimainkan. Verifikasi Celoscan menyusul setelah CELOSCAN_API_KEY tersedia."
+  "reserveFundedCelo": 1,
+  "notes": "Reserve sudah didanai 1 CELO (availableReserve=1000 batutas); game playable. Verifikasi Celoscan menyusul setelah CELOSCAN_API_KEY tersedia."
 }
