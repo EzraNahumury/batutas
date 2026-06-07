@@ -98,3 +98,4 @@
 - [onchain] claimRefund path when secret is lost (pass 2)
 - [onchain] switch-chain guard for Celo Mainnet (pass 2)
 - [onchain] deposit sends real CELO at 1:1000 peg (pass 2)
+- [onchain] withdraw redeems batutas back to CELO (pass 2)
