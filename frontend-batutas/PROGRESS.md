@@ -89,3 +89,4 @@
 - [onchain] recheck Move/Result enum mapping vs contract (pass 1)
 - [onchain] read balance via balanceOf on forno RPC (pass 2)
 - [onchain] derive commit hash with encodePacked uint8+bytes32 (pass 2)
+- [onchain] persist round secret to localStorage for resume (pass 2)
