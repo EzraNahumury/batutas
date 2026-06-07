@@ -29,3 +29,4 @@
 - [65] tidy spacing rhythm between sections (pass 1)
 - [66] confirm logo renders on dark tab (pass 1)
 - [67] tune hero headline clamp for small screens (pass 2)
+- [68] adjust planet orbit timing (pass 2)
