@@ -31,17 +31,16 @@ const config: HardhatUserConfig = {
       accounts,
     },
   },
+  // Etherscan API V2: a single unified key routes verification by chainId
+  // through the multichain endpoint. Celo is registered manually below.
   etherscan: {
-    apiKey: {
-      celo: CELOSCAN_API_KEY,
-      celoSepolia: CELOSCAN_API_KEY,
-    },
+    apiKey: CELOSCAN_API_KEY,
     customChains: [
       {
         network: "celo",
         chainId: 42220,
         urls: {
-          apiURL: "https://api.celoscan.io/api",
+          apiURL: "https://api.etherscan.io/v2/api",
           browserURL: "https://celoscan.io",
         },
       },
@@ -49,7 +48,7 @@ const config: HardhatUserConfig = {
         network: "celoSepolia",
         chainId: 11142220,
         urls: {
-          apiURL: "https://api-sepolia.celoscan.io/api",
+          apiURL: "https://api.etherscan.io/v2/api",
           browserURL: "https://sepolia.celoscan.io",
         },
       },

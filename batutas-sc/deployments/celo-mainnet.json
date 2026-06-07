@@ -12,7 +12,7 @@
     "stake": 25,
     "winPayout": 50
   },
-  "verified": false,
+  "verified": true,
   "reserveFundedCelo": 1,
-  "notes": "Reserve sudah didanai 1 CELO (availableReserve=1000 batutas); game playable. Verifikasi Celoscan menyusul setelah CELOSCAN_API_KEY tersedia."
+  "notes": "Reserve sudah didanai 1 CELO (availableReserve=1000 batutas); game playable. Kontrak terverifikasi di Celoscan (source publik)."
 }
