@@ -37,3 +37,4 @@
 - [73] smooth scroll-reveal stagger (pass 2)
 - [74] balance lime CTA glow (pass 2)
 - [75] verify mobile has no horizontal scroll (pass 2)
+- [76] a11y: lift eyebrow label contrast (pass 2)
