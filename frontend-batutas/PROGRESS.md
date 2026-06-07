@@ -55,3 +55,4 @@
 - [91] tune nebula bloom opacity (pass 2)
 - [92] adjust paper-craft float timing (pass 2)
 - [93] verify production build is clean (pass 2)
+- [94] recheck commit-reveal copy vs README (pass 2)
