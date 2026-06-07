@@ -1,2 +1,3 @@
 - [37] tune hero headline clamp for small screens (pass 1)
 - [38] adjust planet orbit timing (pass 1)
+- [39] refine outer starfield density (pass 1)
