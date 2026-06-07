@@ -97,3 +97,4 @@
 - [onchain] resume pending commit on reload (pass 2)
 - [onchain] claimRefund path when secret is lost (pass 2)
 - [onchain] switch-chain guard for Celo Mainnet (pass 2)
+- [onchain] deposit sends real CELO at 1:1000 peg (pass 2)
