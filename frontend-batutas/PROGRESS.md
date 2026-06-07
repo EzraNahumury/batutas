@@ -82,3 +82,4 @@
 - [onchain] auto-connect prefers injected connector (pass 1)
 - [onchain] refresh on-chain state after each tx (pass 1)
 - [onchain] surface short error messages from wallet (pass 1)
+- [onchain] keep card shuffle until move is committed (pass 1)
