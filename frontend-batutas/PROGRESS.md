@@ -95,3 +95,4 @@
 - [onchain] map net delta win +25 / draw 0 / lose -25 (pass 2)
 - [onchain] handle ReserveTooLow and rejected-tx errors (pass 2)
 - [onchain] resume pending commit on reload (pass 2)
+- [onchain] claimRefund path when secret is lost (pass 2)
