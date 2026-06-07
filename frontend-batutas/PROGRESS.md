@@ -1,0 +1,1 @@
+- [37] tune hero headline clamp for small screens (pass 1)
