@@ -79,3 +79,4 @@
 - [onchain] hide ConnectButton inside MiniPay (pass 1)
 - [onchain] show MiniPay status chip in header (pass 1)
 - [onchain] connecting-to-MiniPay state on the gate (pass 1)
+- [onchain] auto-connect prefers injected connector (pass 1)
