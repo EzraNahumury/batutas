@@ -12,3 +12,4 @@
 - [48] tune card shuffle cadence (pass 1)
 - [49] refine card flip easing (pass 1)
 - [50] adjust deck slot spacing (pass 1)
+- [51] polish result banner colors (pass 1)
