@@ -53,3 +53,4 @@
 - [89] responsive features grid breakpoints (pass 2)
 - [90] enlarge footer link tap targets (pass 2)
 - [91] tune nebula bloom opacity (pass 2)
+- [92] adjust paper-craft float timing (pass 2)
