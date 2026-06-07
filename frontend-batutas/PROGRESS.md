@@ -100,3 +100,4 @@
 - [onchain] deposit sends real CELO at 1:1000 peg (pass 2)
 - [onchain] withdraw redeems batutas back to CELO (pass 2)
 - [onchain] reveal flips only the chosen card (pass 2)
+- [onchain] link contract on Celoscan in live banner (pass 2)
