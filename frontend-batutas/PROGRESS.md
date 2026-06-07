@@ -62,3 +62,4 @@
 - [98] adjust planet orbit timing (pass 3)
 - [99] refine outer starfield density (pass 3)
 - [100] polish navbar glassmorphism (pass 3)
+- [onchain] read balance via balanceOf on forno RPC (pass 1)
