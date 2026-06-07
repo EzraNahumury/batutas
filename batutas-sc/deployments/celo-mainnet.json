@@ -3,7 +3,7 @@
   "chainId": 42220,
   "contract": "Batutas",
   "address": "0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf",
-  "owner": "0x746860E3a28a351f02B057E17683896b20582102",
+  "owner": "0xa066D8653ED3Ae672f36CaE77dB70c921F6fB8A0",
   "deployer": "0x746860E3a28a351f02B057E17683896b20582102",
   "constructorArgs": ["0x746860E3a28a351f02B057E17683896b20582102"],
   "explorer": "https://celoscan.io/address/0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf",
