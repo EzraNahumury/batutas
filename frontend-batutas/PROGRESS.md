@@ -44,3 +44,4 @@
 - [80] adjust deck slot spacing (pass 2)
 - [81] polish result banner colors (pass 2)
 - [82] check wallet modal accent theme (pass 2)
+- [83] verify Celo chain and transports (pass 2)
