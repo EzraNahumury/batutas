@@ -76,3 +76,4 @@
 - [onchain] withdraw redeems batutas back to CELO (pass 1)
 - [onchain] reveal flips only the chosen card (pass 1)
 - [onchain] link contract on Celoscan in live banner (pass 1)
+- [onchain] hide ConnectButton inside MiniPay (pass 1)
