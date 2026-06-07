@@ -90,3 +90,4 @@
 - [onchain] read balance via balanceOf on forno RPC (pass 2)
 - [onchain] derive commit hash with encodePacked uint8+bytes32 (pass 2)
 - [onchain] persist round secret to localStorage for resume (pass 2)
+- [onchain] gate reveal until the next block after commit (pass 2)
