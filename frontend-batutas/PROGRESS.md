@@ -81,3 +81,4 @@
 - [onchain] connecting-to-MiniPay state on the gate (pass 1)
 - [onchain] auto-connect prefers injected connector (pass 1)
 - [onchain] refresh on-chain state after each tx (pass 1)
+- [onchain] surface short error messages from wallet (pass 1)
