@@ -51,3 +51,4 @@
 - [87] size favicon icon (pass 2)
 - [88] refine meta tags and SEO copy (pass 2)
 - [89] responsive features grid breakpoints (pass 2)
+- [90] enlarge footer link tap targets (pass 2)
