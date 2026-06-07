@@ -80,3 +80,4 @@
 - [onchain] show MiniPay status chip in header (pass 1)
 - [onchain] connecting-to-MiniPay state on the gate (pass 1)
 - [onchain] auto-connect prefers injected connector (pass 1)
+- [onchain] refresh on-chain state after each tx (pass 1)
