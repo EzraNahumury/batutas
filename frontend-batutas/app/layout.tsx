@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     "commit reveal",
     "on-chain",
   ],
+  other: {
+    "talentapp:project_verification":
+      "50d0a918395d2bd72551f8aa2cb9d0891c26b7bc78116893634a5bc32de2021f6443a805a38609a416d25989d4afd64a04bb5e86dc55dde97bfbd4305038a32c",
+  },
 };
 
 export default function RootLayout({
