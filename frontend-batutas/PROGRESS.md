@@ -102,3 +102,4 @@
 - [onchain] reveal flips only the chosen card (pass 2)
 - [onchain] link contract on Celoscan in live banner (pass 2)
 - [onchain] hide ConnectButton inside MiniPay (pass 2)
+- [onchain] show MiniPay status chip in header (pass 2)
