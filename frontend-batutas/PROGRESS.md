@@ -57,3 +57,4 @@
 - [93] verify production build is clean (pass 2)
 - [94] recheck commit-reveal copy vs README (pass 2)
 - [95] tidy spacing rhythm between sections (pass 2)
+- [96] confirm logo renders on dark tab (pass 2)
