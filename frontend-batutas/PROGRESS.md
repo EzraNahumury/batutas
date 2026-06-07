@@ -78,3 +78,4 @@
 - [onchain] link contract on Celoscan in live banner (pass 1)
 - [onchain] hide ConnectButton inside MiniPay (pass 1)
 - [onchain] show MiniPay status chip in header (pass 1)
+- [onchain] connecting-to-MiniPay state on the gate (pass 1)
