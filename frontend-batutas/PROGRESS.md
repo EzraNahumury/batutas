@@ -19,3 +19,4 @@
 - [55] align history rows (pass 1)
 - [56] respect prefers-reduced-motion (pass 1)
 - [57] size favicon icon (pass 1)
+- [58] refine meta tags and SEO copy (pass 1)
