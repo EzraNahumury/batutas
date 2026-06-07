@@ -58,3 +58,4 @@
 - [94] recheck commit-reveal copy vs README (pass 2)
 - [95] tidy spacing rhythm between sections (pass 2)
 - [96] confirm logo renders on dark tab (pass 2)
+- [97] tune hero headline clamp for small screens (pass 3)
