@@ -26,3 +26,4 @@
 - [62] adjust paper-craft float timing (pass 1)
 - [63] verify production build is clean (pass 1)
 - [64] recheck commit-reveal copy vs README (pass 1)
+- [65] tidy spacing rhythm between sections (pass 1)
