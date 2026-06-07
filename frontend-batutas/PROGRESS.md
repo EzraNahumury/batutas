@@ -46,3 +46,4 @@
 - [82] check wallet modal accent theme (pass 2)
 - [83] verify Celo chain and transports (pass 2)
 - [84] refine deposit/withdraw modal copy (pass 2)
+- [85] align history rows (pass 2)
