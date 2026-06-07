@@ -71,3 +71,4 @@
 - [onchain] handle ReserveTooLow and rejected-tx errors (pass 1)
 - [onchain] resume pending commit on reload (pass 1)
 - [onchain] claimRefund path when secret is lost (pass 1)
+- [onchain] switch-chain guard for Celo Mainnet (pass 1)
