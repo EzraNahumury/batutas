@@ -30,3 +30,4 @@
 - [66] confirm logo renders on dark tab (pass 1)
 - [67] tune hero headline clamp for small screens (pass 2)
 - [68] adjust planet orbit timing (pass 2)
+- [69] refine outer starfield density (pass 2)
