@@ -11,3 +11,4 @@
 - [47] a11y: focus-visible rings on controls (pass 1)
 - [48] tune card shuffle cadence (pass 1)
 - [49] refine card flip easing (pass 1)
+- [50] adjust deck slot spacing (pass 1)
