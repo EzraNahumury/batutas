@@ -10,3 +10,4 @@
 - [46] a11y: lift eyebrow label contrast (pass 1)
 - [47] a11y: focus-visible rings on controls (pass 1)
 - [48] tune card shuffle cadence (pass 1)
+- [49] refine card flip easing (pass 1)
