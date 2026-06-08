@@ -72,6 +72,22 @@ effect and the visibility handler — goes through this single predicate, so the
 track never starts in a backgrounded tab (e.g. when the wallet connection
 resolves while the tab is hidden).
 
+## Hook architecture (final)
+
+The hook settled on a small set of focused effects plus refs for live state:
+
+- **One audio element**, lazily created and reused across remounts (StrictMode-safe);
+  cleanup pauses but keeps it.
+- **One playback controller effect** owning the single `sync()` play/pause path. It
+  plays only when `unlockedRef` (a user gesture happened) **and** `canPlay(active)`
+  hold, reading live values from `activeRef`/`unlockedRef` so handlers never go stale.
+  Both the `pointerdown` unlock and `visibilitychange` drive the same `sync()`.
+- The unlock listener **detaches after the first gesture** and is not re-added once
+  unlocked.
+- **Mount restore effect** loads the saved/reduced-motion preference (no writes).
+- **Mute-mirror effect** copies `muted` onto the element; persistence happens only in
+  `toggleMute`.
+
 ## Mute persistence (revised)
 
 The preference is written to `localStorage` **only inside `toggleMute`** — i.e.
