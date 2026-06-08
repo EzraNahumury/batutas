@@ -52,7 +52,11 @@ export function useBackgroundMusic(active: boolean): {
   toggleMute: () => void;
 } {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const unlockedRef = useRef(false); // a user gesture has unlocked autoplay
+  const activeRef = useRef(active); // latest `active` for event handlers
   const [muted, setMuted] = useState(false);
+
+  activeRef.current = active;
 
   // Create the single audio element once.
   useEffect(() => {
@@ -91,6 +95,7 @@ export function useBackgroundMusic(active: boolean): {
   useEffect(() => {
     if (!active) return;
     const start = () => {
+      unlockedRef.current = true;
       audioRef.current?.play().catch(() => {});
     };
     document.addEventListener("pointerdown", start, { once: true });
@@ -102,7 +107,7 @@ export function useBackgroundMusic(active: boolean): {
     const onVisibility = () => {
       const audio = audioRef.current;
       if (!audio) return;
-      if (canPlay(active)) audio.play().catch(() => {});
+      if (canPlay(activeRef.current)) audio.play().catch(() => {});
       else audio.pause();
     };
     document.addEventListener("visibilitychange", onVisibility);
