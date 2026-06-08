@@ -94,4 +94,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:43:04 - docs: note theme change [pr 22 #2] (primary=#de90ce accent=#30450b bg=#91033d)
 - 2026-06-08 10:43:04 - chore: rotate color scheme [pr 22 #3] (primary=#5a51a9 accent=#e64d10 bg=#b77e91)
 - 2026-06-08 10:43:04 - docs: note theme change [pr 22 #4] (primary=#b78b6e accent=#f0b717 bg=#b687e0)
+- 2026-06-08 10:43:16 - chore: rotate color scheme [pr 23 #1] (primary=#ee1c14 accent=#537cab bg=#9d3ea5)
 <!-- changelog:end -->
