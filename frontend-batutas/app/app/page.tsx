@@ -28,7 +28,7 @@ import {
 import StarField from "../components/StarField";
 import { useIsMiniPay } from "../lib/useMiniPay";
 import { useBackgroundMusic } from "../lib/useBackgroundMusic";
-import { Rock, Paper, Scissors, Coin, ArrowUpRight, ShieldCheck } from "../components/icons";
+import { Rock, Paper, Scissors, Coin, ArrowUpRight, ShieldCheck, SpeakerOn, SpeakerOff } from "../components/icons";
 import type { ComponentType, SVGProps } from "react";
 
 const ZERO_HASH = `0x${"0".repeat(64)}` as const;
@@ -108,7 +108,7 @@ export default function AppPage() {
 
   // Loop background music while the player is connected on the right chain.
   // Gated on `mounted` so nothing tries to play during SSR / before hydration.
-  useBackgroundMusic(mounted && isConnected && !wrongChain);
+  const { muted, toggleMute } = useBackgroundMusic(mounted && isConnected && !wrongChain);
 
   useEffect(() => setMounted(true), []);
 
@@ -428,6 +428,14 @@ export default function AppPage() {
           </span>
         </div>
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={toggleMute}
+            aria-label="Toggle music"
+            className="grid h-10 w-10 place-items-center rounded-full glass text-lavender"
+          >
+            {muted ? <SpeakerOff className="h-4 w-4" /> : <SpeakerOn className="h-4 w-4" />}
+          </button>
           <div className="hidden items-center gap-2 rounded-full glass px-4 py-2 sm:flex">
             <Coin className="h-4 w-4 text-iris-300" />
             <span className="text-sm font-semibold text-white">{balNum.toLocaleString()}</span>
