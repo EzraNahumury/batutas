@@ -2,6 +2,8 @@
 
 **Date:** 2026-06-08
 **Scope:** Frontend only (`frontend-batutas`). No smart-contract changes — contract is live on Celo Mainnet.
+**Status:** Implemented and revised per code review (hidden-tab guard, user-action-only persistence,
+single playback controller). `next build` verified clean on 2026-06-08.
 
 ## Goal
 
@@ -129,3 +131,14 @@ No automated FE test harness in the project. Verify manually + by build:
 | 5 — polish + docs | `feat/music-5-polish` | 13 sensible volume / reduced-motion guard · 14 update PROGRESS + README · 15 final cleanup + verify build |
 
 Each PR: branch off latest `main`, push, open PR, merge, then start the next.
+
+## Manual QA checklist
+
+- [ ] Connect on `/app`: no sound until the first tap; then the track loops at a calm volume.
+- [ ] Mute toggle flips audio instantly; icon, color and `aria-label`/`aria-pressed` follow state.
+- [ ] Reload after toggling mute → preference persists. Reload without ever toggling → reduced-motion
+      users start muted, others start unmuted (nothing stored).
+- [ ] Switch browser tabs → music pauses while hidden, resumes on return.
+- [ ] Connect while the tab is hidden → no music starts until the tab is visible again.
+- [ ] Disconnect / wrong chain → music stops.
+- [ ] `next build` is clean.
