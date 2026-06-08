@@ -85,10 +85,12 @@ export function useBackgroundMusic(active: boolean): {
     };
     const onGesture = () => {
       unlockedRef.current = true;
+      document.removeEventListener("pointerdown", onGesture);
       sync();
     };
     sync();
-    document.addEventListener("pointerdown", onGesture);
+    // Only listen for the unlocking gesture until it has happened once.
+    if (!unlockedRef.current) document.addEventListener("pointerdown", onGesture);
     document.addEventListener("visibilitychange", sync);
     return () => {
       document.removeEventListener("pointerdown", onGesture);
