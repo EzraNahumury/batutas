@@ -54,6 +54,7 @@ Everything runs on **Celo Mainnet** and is optimized for **MiniPay** (Opera's se
 - 🪙 **In-app batutas balance** pegged transparently to CELO
 - 📊 **On-chain game history** — every round is auditable
 - 📱 **Responsive, mobile-first** UI
+- 🎵 **Looping game soundtrack** with a one-tap mute toggle (preference persisted)
 - 🧪 Full **testnet → mainnet** deployment path
 
 ---
