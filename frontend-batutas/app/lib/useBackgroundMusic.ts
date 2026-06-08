@@ -15,6 +15,12 @@ function prefersReducedMotion(): boolean {
   }
 }
 
+/* Single source of truth for "should the track be audible right now": only
+   when the page wants it (active) and the tab is in the foreground. */
+function canPlay(active: boolean): boolean {
+  return active && !document.hidden;
+}
+
 /* Read the saved mute preference; fall back to the reduced-motion default. */
 function loadMuted(): boolean {
   try {
@@ -58,7 +64,7 @@ export function useBackgroundMusic(active: boolean): {
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (active && !document.hidden) {
+    if (canPlay(active)) {
       audio.play().catch(() => {});
     } else {
       audio.pause();
