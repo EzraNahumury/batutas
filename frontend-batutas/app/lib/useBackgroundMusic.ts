@@ -70,17 +70,19 @@ export function useBackgroundMusic(active: boolean): {
     };
   }, []);
 
-  // Play while active and the tab is visible, pause otherwise. play() may
-  // reject under autoplay policy before the first gesture — that is expected,
-  // so swallow it.
+  // Single playback controller: the track is audible only after a user gesture
+  // has unlocked autoplay and while canPlay() holds. Re-runs on `active`
+  // changes and reads live state from refs. play() may reject under autoplay
+  // policy, so swallow it.
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (canPlay(active)) {
-      audio.play().catch(() => {});
-    } else {
-      audio.pause();
-    }
+    if (!audioRef.current) return;
+    const sync = () => {
+      const audio = audioRef.current;
+      if (!audio) return;
+      if (unlockedRef.current && canPlay(activeRef.current)) audio.play().catch(() => {});
+      else audio.pause();
+    };
+    sync();
   }, [active]);
 
   // Restore the saved preference after mount (kept out of the initial state to
