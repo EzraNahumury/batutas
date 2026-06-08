@@ -86,4 +86,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:42:39 - docs: note theme change [pr 20 #2] (primary=#7c0b2e accent=#71c194 bg=#482197)
 - 2026-06-08 10:42:40 - style: tweak theme palette [pr 20 #3] (primary=#d65c22 accent=#ee756d bg=#e0c80c)
 - 2026-06-08 10:42:40 - docs: update changelog entry [pr 20 #4] (primary=#4c33d2 accent=#e6faac bg=#bdd51c)
+- 2026-06-08 10:42:52 - docs: note theme change [pr 21 #1] (primary=#b86b3c accent=#b5d94d bg=#bbcf00)
+- 2026-06-08 10:42:52 - style: tweak theme palette [pr 21 #2] (primary=#e30ca1 accent=#94ca79 bg=#72de1e)
+- 2026-06-08 10:42:52 - chore: refresh design tokens [pr 21 #3] (primary=#e3f3c7 accent=#b953c9 bg=#f61338)
+- 2026-06-08 10:42:52 - docs: update changelog entry [pr 21 #4] (primary=#4913fa accent=#130cb5 bg=#25e662)
 <!-- changelog:end -->
