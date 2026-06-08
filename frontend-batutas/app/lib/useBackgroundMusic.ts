@@ -88,7 +88,11 @@ export function useBackgroundMusic(active: boolean): {
     };
     sync();
     document.addEventListener("pointerdown", onGesture);
-    return () => document.removeEventListener("pointerdown", onGesture);
+    document.addEventListener("visibilitychange", sync);
+    return () => {
+      document.removeEventListener("pointerdown", onGesture);
+      document.removeEventListener("visibilitychange", sync);
+    };
   }, [active]);
 
   // Restore the saved preference after mount (kept out of the initial state to
@@ -96,18 +100,6 @@ export function useBackgroundMusic(active: boolean): {
   useEffect(() => {
     setMuted(loadMuted());
   }, []);
-
-  // Pause while the tab is hidden; resume when it returns (if still active).
-  useEffect(() => {
-    const onVisibility = () => {
-      const audio = audioRef.current;
-      if (!audio) return;
-      if (canPlay(activeRef.current)) audio.play().catch(() => {});
-      else audio.pause();
-    };
-    document.addEventListener("visibilitychange", onVisibility);
-    return () => document.removeEventListener("visibilitychange", onVisibility);
-  }, [active]);
 
   // Keep the element's muted flag in sync with state. Persistence lives in
   // toggleMute so we only store an explicit user choice (never the initial
