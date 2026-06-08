@@ -431,8 +431,10 @@ export default function AppPage() {
           <button
             type="button"
             onClick={toggleMute}
-            aria-label="Toggle music"
-            className="grid h-10 w-10 place-items-center rounded-full glass text-lavender"
+            aria-label={muted ? "Unmute music" : "Mute music"}
+            aria-pressed={muted}
+            title={muted ? "Unmute music" : "Mute music"}
+            className={`grid h-10 w-10 place-items-center rounded-full glass ${muted ? "text-muted" : "text-iris-300"}`}
           >
             {muted ? <SpeakerOff className="h-4 w-4" /> : <SpeakerOn className="h-4 w-4" />}
           </button>
