@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Background music
+
+The game page (`/app`) loops a battle track (`public/battle-music.mp3`) to give play a sense of
+atmosphere. Audio is managed by `app/lib/useBackgroundMusic.ts`:
+
+- Plays only while the wallet is connected on Celo Mainnet; pauses on the connect / wrong-chain gates.
+- Starts on the first tap (browser autoplay policy), at a low default volume.
+- A mute toggle in the header reflects state and persists the choice to `localStorage`.
+- Pauses while the tab is hidden, and starts muted for `prefers-reduced-motion` users by default.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
