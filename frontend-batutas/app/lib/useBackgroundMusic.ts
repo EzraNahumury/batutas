@@ -3,6 +3,16 @@ import { useEffect, useRef, useState } from "react";
 /* Source lives in public/ — served at the site root. */
 const TRACK = "/battle-music.mp3";
 const DEFAULT_VOLUME = 0.35;
+const MUTED_KEY = "batutas:muted";
+
+/* Read the saved mute preference; default to unmuted on any failure. */
+function loadMuted(): boolean {
+  try {
+    return localStorage.getItem(MUTED_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
 
 /**
  * Loops a background track for the game page.
@@ -42,9 +52,18 @@ export function useBackgroundMusic(active: boolean): {
     }
   }, [active]);
 
-  // Keep the element's muted flag in sync with state.
+  // Restore the saved preference after mount (kept out of the initial state to
+  // avoid an SSR/client hydration mismatch on the toggle button).
+  useEffect(() => {
+    setMuted(loadMuted());
+  }, []);
+
+  // Keep the element's muted flag in sync with state and persist the choice.
   useEffect(() => {
     if (audioRef.current) audioRef.current.muted = muted;
+    try {
+      localStorage.setItem(MUTED_KEY, muted ? "1" : "0");
+    } catch {}
   }, [muted]);
 
   const toggleMute = () => setMuted((m) => !m);
