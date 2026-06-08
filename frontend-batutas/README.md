@@ -25,10 +25,13 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 The game page (`/app`) loops a battle track (`public/battle-music.mp3`) to give play a sense of
 atmosphere. Audio is managed by `app/lib/useBackgroundMusic.ts`:
 
-- Plays only while the wallet is connected on Celo Mainnet; pauses on the connect / wrong-chain gates.
+- Plays only while the wallet is connected on Celo Mainnet **and the tab is visible**; pauses on the
+  connect / wrong-chain gates, and never starts in a backgrounded tab.
 - Starts on the first tap (browser autoplay policy), at a low default volume.
-- A mute toggle in the header reflects state and persists the choice to `localStorage`.
-- Pauses while the tab is hidden, and starts muted for `prefers-reduced-motion` users by default.
+- A mute toggle in the header reflects state; the choice is written to `localStorage` **only when the
+  user toggles it**, so a visitor who never touches it keeps the `prefers-reduced-motion` default.
+- A single playback controller owns the play/pause path (gesture-unlock + visibility), backed by one
+  reused audio element.
 
 ## Learn More
 
