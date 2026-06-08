@@ -72,6 +72,14 @@ effect and the visibility handler — goes through this single predicate, so the
 track never starts in a backgrounded tab (e.g. when the wallet connection
 resolves while the tab is hidden).
 
+## Mute persistence (revised)
+
+The preference is written to `localStorage` **only inside `toggleMute`** — i.e.
+only when the user explicitly flips the control. Mount-time state restoration
+(`loadMuted`) never writes. This means a visitor who never touches the toggle
+has nothing stored, so `loadMuted`'s `prefers-reduced-motion` fallback keeps
+applying on every load until they make an explicit choice.
+
 ## Error handling
 
 - `audio.play()` returns a promise that can reject (autoplay policy, no source). Swallow the
