@@ -58,6 +58,18 @@ export function useBackgroundMusic(active: boolean): {
     setMuted(loadMuted());
   }, []);
 
+  // Autoplay-safe start: browsers block play() with sound until the user
+  // interacts. While active, the first tap anywhere kicks off playback; the
+  // listener removes itself once it has fired.
+  useEffect(() => {
+    if (!active) return;
+    const start = () => {
+      audioRef.current?.play().catch(() => {});
+    };
+    document.addEventListener("pointerdown", start, { once: true });
+    return () => document.removeEventListener("pointerdown", start);
+  }, [active]);
+
   // Keep the element's muted flag in sync with state and persist the choice.
   useEffect(() => {
     if (audioRef.current) audioRef.current.muted = muted;
