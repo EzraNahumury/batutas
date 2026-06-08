@@ -1,0 +1,23 @@
+/* test.css — auto-tweaked theme tokens */
+:root {
+  --primary: #599869;
+  --accent: #224c2d;
+  --bg: #12416a;
+  --text: #f8fafc;
+  --radius: 12px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--text);
+  border-radius: var(--radius);
+}
+
+.btn:hover {
+  background: var(--accent);
+}
