@@ -32,6 +32,14 @@ function loadMuted(): boolean {
   }
 }
 
+/* Persist an explicit mute choice. Only called on user action so we never
+   store a preference the player never made. */
+function saveMuted(muted: boolean): void {
+  try {
+    localStorage.setItem(MUTED_KEY, muted ? "1" : "0");
+  } catch {}
+}
+
 /**
  * Loops a background track for the game page.
  *
@@ -101,15 +109,19 @@ export function useBackgroundMusic(active: boolean): {
     return () => document.removeEventListener("visibilitychange", onVisibility);
   }, [active]);
 
-  // Keep the element's muted flag in sync with state and persist the choice.
+  // Keep the element's muted flag in sync with state. Persistence lives in
+  // toggleMute so we only store an explicit user choice (never the initial
+  // default), keeping the reduced-motion fallback live for new visitors.
   useEffect(() => {
     if (audioRef.current) audioRef.current.muted = muted;
-    try {
-      localStorage.setItem(MUTED_KEY, muted ? "1" : "0");
-    } catch {}
   }, [muted]);
 
-  const toggleMute = () => setMuted((m) => !m);
+  const toggleMute = () =>
+    setMuted((m) => {
+      const next = !m;
+      saveMuted(next); // persist only the explicit user choice
+      return next;
+    });
 
   return { muted, toggleMute };
 }
