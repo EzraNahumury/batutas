@@ -2,6 +2,8 @@
 
 **Date:** 2026-06-08
 **Scope:** Frontend only (`frontend-batutas`). No smart-contract changes — contract is live on Celo Mainnet.
+**Status:** Implemented and revised per code review (hidden-tab guard, user-action-only persistence,
+single playback controller). `next build` verified clean on 2026-06-08.
 
 ## Goal
 
