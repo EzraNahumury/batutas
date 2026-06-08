@@ -94,8 +94,8 @@ export function useBackgroundMusic(active: boolean): {
     const onVisibility = () => {
       const audio = audioRef.current;
       if (!audio) return;
-      if (document.hidden) audio.pause();
-      else if (active) audio.play().catch(() => {});
+      if (canPlay(active)) audio.play().catch(() => {});
+      else audio.pause();
     };
     document.addEventListener("visibilitychange", onVisibility);
     return () => document.removeEventListener("visibilitychange", onVisibility);
