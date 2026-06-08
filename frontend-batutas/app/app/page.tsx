@@ -434,7 +434,7 @@ export default function AppPage() {
             aria-label={muted ? "Unmute music" : "Mute music"}
             aria-pressed={muted}
             title={muted ? "Unmute music" : "Mute music"}
-            className={`grid h-10 w-10 place-items-center rounded-full glass ${muted ? "text-muted" : "text-iris-300"}`}
+            className={`grid h-10 w-10 place-items-center rounded-full glass transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-iris/60 ${muted ? "text-muted" : "text-iris-300"}`}
           >
             {muted ? <SpeakerOff className="h-4 w-4" /> : <SpeakerOn className="h-4 w-4" />}
           </button>
