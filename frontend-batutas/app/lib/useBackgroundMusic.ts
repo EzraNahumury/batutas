@@ -15,6 +15,12 @@ function prefersReducedMotion(): boolean {
   }
 }
 
+/* Single source of truth for "should the track be audible right now": only
+   when the page wants it (active) and the tab is in the foreground. */
+function canPlay(active: boolean): boolean {
+  return active && !document.hidden;
+}
+
 /* Read the saved mute preference; fall back to the reduced-motion default. */
 function loadMuted(): boolean {
   try {
@@ -52,12 +58,13 @@ export function useBackgroundMusic(active: boolean): {
     };
   }, []);
 
-  // Play while active, pause otherwise. play() may reject under autoplay
-  // policy before the first gesture — that is expected, so swallow it.
+  // Play while active and the tab is visible, pause otherwise. play() may
+  // reject under autoplay policy before the first gesture — that is expected,
+  // so swallow it.
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (active) {
+    if (canPlay(active)) {
       audio.play().catch(() => {});
     } else {
       audio.pause();
@@ -87,8 +94,8 @@ export function useBackgroundMusic(active: boolean): {
     const onVisibility = () => {
       const audio = audioRef.current;
       if (!audio) return;
-      if (document.hidden) audio.pause();
-      else if (active) audio.play().catch(() => {});
+      if (canPlay(active)) audio.play().catch(() => {});
+      else audio.pause();
     };
     document.addEventListener("visibilitychange", onVisibility);
     return () => document.removeEventListener("visibilitychange", onVisibility);
