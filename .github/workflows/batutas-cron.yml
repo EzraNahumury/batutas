@@ -1,0 +1,54 @@
+name: Batutas deposit cron
+
+# Runs the deposit tick in GitHub's cloud, 5x/day, independent of any local PC.
+# Each run: 100 wallets x 0.001 CELO deposit = 100 tx. 5 runs/day = 500 tx/day.
+#
+# Requires repo secret WALLETS_JSON = full contents of
+# batutas-sc/cron/secrets/wallets.json (the 100 wallet private keys).
+# The funder key is NOT needed here — distribution is a one-time local step.
+
+on:
+  schedule:
+    # UTC times, ~4h48m apart => 5 runs/day.
+    - cron: "0 0 * * *"
+    - cron: "48 4 * * *"
+    - cron: "36 9 * * *"
+    - cron: "24 14 * * *"
+    - cron: "12 19 * * *"
+  workflow_dispatch: {} # manual "Run workflow" button
+
+# Never run two ticks at once (avoids nonce clashes if a run overlaps).
+concurrency:
+  group: batutas-cron
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: batutas-sc/cron
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Restore wallets from secret
+        env:
+          WALLETS_JSON: ${{ secrets.WALLETS_JSON }}
+        run: |
+          if [ -z "$WALLETS_JSON" ]; then
+            echo "::error::Missing WALLETS_JSON secret. Set it with: gh secret set WALLETS_JSON < secrets/wallets.json"
+            exit 1
+          fi
+          mkdir -p secrets
+          printf '%s' "$WALLETS_JSON" > secrets/wallets.json
+
+      - name: Run deposit tick
+        run: node tick.js
