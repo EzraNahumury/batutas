@@ -98,8 +98,9 @@ export function useBackgroundMusic(active: boolean): {
     };
   }, [active]);
 
-  // Restore the saved preference after mount (kept out of the initial state to
-  // avoid an SSR/client hydration mismatch on the toggle button).
+  // Restore the saved preference after mount. loadMuted() touches localStorage
+  // and matchMedia, which only exist on the client, so it must run in an effect
+  // rather than in the initial state.
   useEffect(() => {
     setMuted(loadMuted());
   }, []);
