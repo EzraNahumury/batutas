@@ -116,7 +116,12 @@ export function useBackgroundMusic(active: boolean): {
     if (audioRef.current) audioRef.current.muted = muted;
   }, [muted]);
 
-  const toggleMute = () => setMuted((m) => !m);
+  const toggleMute = () =>
+    setMuted((m) => {
+      const next = !m;
+      saveMuted(next); // persist only the explicit user choice
+      return next;
+    });
 
   return { muted, toggleMute };
 }
