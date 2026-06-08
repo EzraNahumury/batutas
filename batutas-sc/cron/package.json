@@ -1,0 +1,16 @@
+{
+  "name": "batutas-cron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "On-chain activity cron for Batutas: generate 100 wallets, distribute CELO, then deposit 0.001 CELO per wallet on a schedule.",
+  "scripts": {
+    "gen": "node generate-wallets.js",
+    "distribute": "node distribute.js",
+    "tick": "node tick.js",
+    "status": "node status.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.0"
+  }
+}
