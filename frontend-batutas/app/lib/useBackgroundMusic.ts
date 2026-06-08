@@ -70,6 +70,18 @@ export function useBackgroundMusic(active: boolean): {
     return () => document.removeEventListener("pointerdown", start);
   }, [active]);
 
+  // Pause while the tab is hidden; resume when it returns (if still active).
+  useEffect(() => {
+    const onVisibility = () => {
+      const audio = audioRef.current;
+      if (!audio) return;
+      if (document.hidden) audio.pause();
+      else if (active) audio.play().catch(() => {});
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
+  }, [active]);
+
   // Keep the element's muted flag in sync with state and persist the choice.
   useEffect(() => {
     if (audioRef.current) audioRef.current.muted = muted;
