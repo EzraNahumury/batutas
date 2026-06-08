@@ -38,4 +38,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:40:08 - refactor: bump css variables [pr 08 #2] (primary=#b03988 accent=#f9aa2b bg=#fd1b57)
 - 2026-06-08 10:40:08 - docs: note theme change [pr 08 #3] (primary=#608bf0 accent=#3430ba bg=#662eab)
 - 2026-06-08 10:40:08 - style: restyle button hover [pr 08 #4] (primary=#e11dba accent=#2ad405 bg=#188f50)
+- 2026-06-08 10:40:21 - docs: note theme change [pr 09 #1] (primary=#47ed33 accent=#153cc7 bg=#78019a)
+- 2026-06-08 10:40:21 - style: restyle button hover [pr 09 #2] (primary=#d53e89 accent=#ded970 bg=#87a4b8)
+- 2026-06-08 10:40:21 - docs: note theme change [pr 09 #3] (primary=#c3cbef accent=#0fd995 bg=#31ba8d)
+- 2026-06-08 10:40:21 - chore: refresh design tokens [pr 09 #4] (primary=#da86a3 accent=#83e32d bg=#c439e1)
 <!-- changelog:end -->
