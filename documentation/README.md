@@ -78,4 +78,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:42:14 - docs: note theme change [pr 18 #2] (primary=#40b957 accent=#f7b603 bg=#098574)
 - 2026-06-08 10:42:14 - chore: rotate color scheme [pr 18 #3] (primary=#de6acf accent=#409753 bg=#7968b6)
 - 2026-06-08 10:42:14 - style: adjust accent color [pr 18 #4] (primary=#175ad6 accent=#adc4d4 bg=#3f5730)
+- 2026-06-08 10:42:27 - refactor: bump css variables [pr 19 #1] (primary=#7433f6 accent=#cb3cf9 bg=#a86312)
+- 2026-06-08 10:42:27 - docs: update changelog entry [pr 19 #2] (primary=#1e120c accent=#fdcd38 bg=#0ad802)
+- 2026-06-08 10:42:27 - refactor: bump css variables [pr 19 #3] (primary=#1622f0 accent=#1b67d4 bg=#f69e20)
+- 2026-06-08 10:42:27 - chore: refresh design tokens [pr 19 #4] (primary=#40257d accent=#731d4e bg=#1acead)
 <!-- changelog:end -->
