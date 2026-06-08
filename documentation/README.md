@@ -75,4 +75,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:42:02 - chore: rotate color scheme [pr 17 #3] (primary=#437646 accent=#f45b76 bg=#3f511f)
 - 2026-06-08 10:42:02 - docs: update changelog entry [pr 17 #4] (primary=#d1cf82 accent=#268b3c bg=#1a5430)
 - 2026-06-08 10:42:14 - chore: rotate color scheme [pr 18 #1] (primary=#b974ba accent=#d24309 bg=#e89c49)
+- 2026-06-08 10:42:14 - docs: note theme change [pr 18 #2] (primary=#40b957 accent=#f7b603 bg=#098574)
 <!-- changelog:end -->
