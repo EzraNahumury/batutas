@@ -64,6 +64,14 @@ isConnected && !wrongChain ──▶ active ──▶ play / pause
 mute button click ──▶ toggleMute ──▶ audio.muted + localStorage
 ```
 
+## Playback gating (revised)
+
+Playback is allowed only when **both** the page wants it and the tab is visible:
+`canPlay(active) = active && !document.hidden`. Every play decision — the active
+effect and the visibility handler — goes through this single predicate, so the
+track never starts in a backgrounded tab (e.g. when the wallet connection
+resolves while the tab is hidden).
+
 ## Error handling
 
 - `audio.play()` returns a promise that can reject (autoplay policy, no source). Swallow the
