@@ -105,3 +105,9 @@
 - [onchain] show MiniPay status chip in header (pass 2)
 - [onchain] connecting-to-MiniPay state on the gate (pass 2)
 - [onchain] auto-connect prefers injected connector (pass 2)
+- [audio] loop battle music across the game page while connected
+- [audio] start playback on first tap (autoplay-safe)
+- [audio] header mute toggle with icon + aria reflecting state
+- [audio] persist mute preference to localStorage across reloads
+- [audio] pause while the tab is hidden, resume on return
+- [audio] start muted for prefers-reduced-motion users by default
