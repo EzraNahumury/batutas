@@ -27,6 +27,7 @@ import {
 } from "../lib/batutas";
 import StarField from "../components/StarField";
 import { useIsMiniPay } from "../lib/useMiniPay";
+import { useBackgroundMusic } from "../lib/useBackgroundMusic";
 import { Rock, Paper, Scissors, Coin, ArrowUpRight, ShieldCheck } from "../components/icons";
 import type { ComponentType, SVGProps } from "react";
 
@@ -104,6 +105,9 @@ export default function AppPage() {
 
   const wrongChain = isConnected && chainId !== BATUTAS_CHAIN_ID;
   const netWin = winAmt - stakeAmt;
+
+  // Loop background music while the player is connected on the right chain.
+  useBackgroundMusic(isConnected && !wrongChain);
 
   useEffect(() => setMounted(true), []);
 
