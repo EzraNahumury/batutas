@@ -82,7 +82,13 @@ export function useBackgroundMusic(active: boolean): {
       if (unlockedRef.current && canPlay(activeRef.current)) audio.play().catch(() => {});
       else audio.pause();
     };
+    const onGesture = () => {
+      unlockedRef.current = true;
+      sync();
+    };
     sync();
+    document.addEventListener("pointerdown", onGesture);
+    return () => document.removeEventListener("pointerdown", onGesture);
   }, [active]);
 
   // Restore the saved preference after mount (kept out of the initial state to
@@ -90,19 +96,6 @@ export function useBackgroundMusic(active: boolean): {
   useEffect(() => {
     setMuted(loadMuted());
   }, []);
-
-  // Autoplay-safe start: browsers block play() with sound until the user
-  // interacts. While active, the first tap anywhere kicks off playback; the
-  // listener removes itself once it has fired.
-  useEffect(() => {
-    if (!active) return;
-    const start = () => {
-      unlockedRef.current = true;
-      audioRef.current?.play().catch(() => {});
-    };
-    document.addEventListener("pointerdown", start, { once: true });
-    return () => document.removeEventListener("pointerdown", start);
-  }, [active]);
 
   // Pause while the tab is hidden; resume when it returns (if still active).
   useEffect(() => {
