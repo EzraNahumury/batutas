@@ -52,12 +52,13 @@ export function useBackgroundMusic(active: boolean): {
     };
   }, []);
 
-  // Play while active, pause otherwise. play() may reject under autoplay
-  // policy before the first gesture — that is expected, so swallow it.
+  // Play while active and the tab is visible, pause otherwise. play() may
+  // reject under autoplay policy before the first gesture — that is expected,
+  // so swallow it.
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (active) {
+    if (active && !document.hidden) {
       audio.play().catch(() => {});
     } else {
       audio.pause();
