@@ -58,15 +58,16 @@ export function useBackgroundMusic(active: boolean): {
 
   activeRef.current = active;
 
-  // Create the single audio element once.
+  // Create (or reuse) the single audio element. Reusing the ref across a
+  // remount — e.g. React StrictMode's double-invoke in dev — avoids spawning a
+  // second element. Cleanup pauses but keeps the element for reuse.
   useEffect(() => {
-    const audio = new Audio(TRACK);
+    const audio = audioRef.current ?? new Audio(TRACK);
     audio.loop = true;
     audio.volume = DEFAULT_VOLUME;
     audioRef.current = audio;
     return () => {
       audio.pause();
-      audioRef.current = null;
     };
   }, []);
 
