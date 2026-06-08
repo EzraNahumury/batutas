@@ -61,4 +61,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:41:23 - style: restyle button hover [pr 14 #1] (primary=#5633e7 accent=#cc5c04 bg=#2c8ed9)
 - 2026-06-08 10:41:23 - style: tweak theme palette [pr 14 #2] (primary=#b65d24 accent=#cac02d bg=#e1153c)
 - 2026-06-08 10:41:23 - docs: update changelog entry [pr 14 #3] (primary=#a46378 accent=#adc44f bg=#843837)
+- 2026-06-08 10:41:23 - style: restyle button hover [pr 14 #4] (primary=#adb2c8 accent=#3fe6d6 bg=#6558ba)
 <!-- changelog:end -->
