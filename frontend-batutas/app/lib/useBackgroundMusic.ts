@@ -109,12 +109,11 @@ export function useBackgroundMusic(active: boolean): {
     return () => document.removeEventListener("visibilitychange", onVisibility);
   }, [active]);
 
-  // Keep the element's muted flag in sync with state and persist the choice.
+  // Keep the element's muted flag in sync with state. Persistence lives in
+  // toggleMute so we only store an explicit user choice (never the initial
+  // default), keeping the reduced-motion fallback live for new visitors.
   useEffect(() => {
     if (audioRef.current) audioRef.current.muted = muted;
-    try {
-      localStorage.setItem(MUTED_KEY, muted ? "1" : "0");
-    } catch {}
   }, [muted]);
 
   const toggleMute = () => setMuted((m) => !m);
