@@ -5,10 +5,22 @@ const TRACK = "/battle-music.mp3";
 const DEFAULT_VOLUME = 0.35;
 const MUTED_KEY = "batutas:muted";
 
-/* Read the saved mute preference; default to unmuted on any failure. */
+/* Users who ask the OS to reduce motion generally want a calmer experience;
+   start quiet for them unless they have made an explicit choice. */
+function prefersReducedMotion(): boolean {
+  try {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  } catch {
+    return false;
+  }
+}
+
+/* Read the saved mute preference; fall back to the reduced-motion default. */
 function loadMuted(): boolean {
   try {
-    return localStorage.getItem(MUTED_KEY) === "1";
+    const saved = localStorage.getItem(MUTED_KEY);
+    if (saved !== null) return saved === "1";
+    return prefersReducedMotion();
   } catch {
     return false;
   }
