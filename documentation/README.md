@@ -36,4 +36,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-08 10:39:55 - docs: note theme change [pr 07 #4] (primary=#5229b4 accent=#1c91dd bg=#9676e5)
 - 2026-06-08 10:40:08 - style: restyle button hover [pr 08 #1] (primary=#011885 accent=#ca2b92 bg=#39df70)
 - 2026-06-08 10:40:08 - refactor: bump css variables [pr 08 #2] (primary=#b03988 accent=#f9aa2b bg=#fd1b57)
+- 2026-06-08 10:40:08 - docs: note theme change [pr 08 #3] (primary=#608bf0 accent=#3430ba bg=#662eab)
 <!-- changelog:end -->
