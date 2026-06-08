@@ -107,7 +107,8 @@ export default function AppPage() {
   const netWin = winAmt - stakeAmt;
 
   // Loop background music while the player is connected on the right chain.
-  useBackgroundMusic(isConnected && !wrongChain);
+  // Gated on `mounted` so nothing tries to play during SSR / before hydration.
+  useBackgroundMusic(mounted && isConnected && !wrongChain);
 
   useEffect(() => setMounted(true), []);
 
