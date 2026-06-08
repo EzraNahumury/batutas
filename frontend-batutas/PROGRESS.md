@@ -111,3 +111,8 @@
 - [audio] persist mute preference to localStorage across reloads
 - [audio] pause while the tab is hidden, resume on return
 - [audio] start muted for prefers-reduced-motion users by default
+- [audio-fix] never start playback in a hidden tab (canPlay guard)
+- [audio-fix] persist mute only on explicit toggle, keep reduced-motion fallback
+- [audio-fix] consolidate play/pause into one controller effect
+- [audio-fix] reuse a single audio element across remounts
+- [audio-fix] detach gesture listener after first unlock
