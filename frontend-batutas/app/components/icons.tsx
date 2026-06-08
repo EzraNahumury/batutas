@@ -122,6 +122,24 @@ export function Scale(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function SpeakerOn(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base(props)}>
+      <path d="M4 9v6h3l5 4V5L7 9H4Z" />
+      <path d="M16 8.5a5 5 0 0 1 0 7" />
+      <path d="M18.5 6a8.5 8.5 0 0 1 0 12" />
+    </svg>
+  );
+}
+export function SpeakerOff(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base(props)}>
+      <path d="M4 9v6h3l5 4V5L7 9H4Z" />
+      <path d="m16 9 5 6M21 9l-5 6" />
+    </svg>
+  );
+}
+
 /* small RPS glyphs */
 export function Rock(props: SVGProps<SVGSVGElement>) {
   return (
