@@ -199,4 +199,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-09 08:45:35 - chore: refresh design tokens [pr 23 #3] (primary=#fb98a2 accent=#1ba0b6 bg=#d40423)
 - 2026-06-09 08:45:35 - docs: update changelog entry [pr 23 #4] (primary=#b60b64 accent=#ed45cf bg=#ab6f64)
 - 2026-06-09 08:45:53 - refactor: bump css variables [pr 24 #1] (primary=#72d25f accent=#738158 bg=#2ef29e)
+- 2026-06-09 08:45:53 - docs: update changelog entry [pr 24 #2] (primary=#669956 accent=#11e73e bg=#4d9b13)
 <!-- changelog:end -->
