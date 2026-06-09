@@ -114,4 +114,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-09 08:38:31 - chore: rotate color scheme [pr 02 #2] (primary=#aad90f accent=#0009ad bg=#f3101b)
 - 2026-06-09 08:38:31 - chore: rotate color scheme [pr 02 #3] (primary=#2423c3 accent=#3362d0 bg=#026207)
 - 2026-06-09 08:38:31 - refactor: bump css variables [pr 02 #4] (primary=#fc1104 accent=#28bffc bg=#f3fdd3)
+- 2026-06-09 08:39:07 - style: restyle button hover [pr 03 #1] (primary=#a20f98 accent=#e2fee0 bg=#232674)
 <!-- changelog:end -->
