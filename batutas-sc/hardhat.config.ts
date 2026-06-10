@@ -19,6 +19,13 @@ const config: HardhatUserConfig = {
       },
     },
   },
+  // Per-function gas usage report. Opt-in via REPORT_GAS=true to keep the
+  // normal test run quiet.
+  gasReporter: {
+    enabled: process.env.REPORT_GAS === "true",
+    currency: "USD",
+    excludeContracts: ["RPSLogicHarness"],
+  },
   networks: {
     celo: {
       url: "https://forno.celo.org",

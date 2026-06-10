@@ -97,6 +97,7 @@ cp .env.example .env   # fill PRIVATE_KEY (throwaway) + CELOSCAN_API_KEY
 npm run compile
 npm test          # 53 tests: funds, commit-reveal, reserve, access control, pause
 npm run coverage  # solidity-coverage report (./coverage)
+npm run test:gas  # per-function gas usage report
 ```
 
 **Coverage (production contracts):** 100% statements · 100% functions ·
