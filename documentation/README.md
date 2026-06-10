@@ -211,4 +211,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-10 08:56:57 - docs: update changelog entry [pr 01 #3] (primary=#a4a292 accent=#e2579f bg=#88d1a8)
 - 2026-06-10 08:56:57 - docs: update changelog entry [pr 01 #4] (primary=#a07051 accent=#bcc687 bg=#28e17f)
 - 2026-06-10 08:57:12 - chore: refresh design tokens [pr 02 #1] (primary=#845a71 accent=#bcc2f3 bg=#44e2d0)
+- 2026-06-10 08:57:13 - docs: update changelog entry [pr 02 #2] (primary=#eec6a6 accent=#a545d4 bg=#7b9afe)
 <!-- changelog:end -->
