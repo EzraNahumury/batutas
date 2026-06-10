@@ -1,0 +1,41 @@
+name: Smart Contracts CI
+
+# Hanya berjalan untuk perubahan di paket smart contract (batutas-sc).
+# Frontend tidak tersentuh oleh workflow ini.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "batutas-sc/**"
+      - ".github/workflows/smart-contracts.yml"
+  pull_request:
+    paths:
+      - "batutas-sc/**"
+      - ".github/workflows/smart-contracts.yml"
+
+jobs:
+  test:
+    name: Compile & Test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: batutas-sc
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: batutas-sc/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile contracts
+        run: npm run compile
+
+      - name: Run tests
+        run: npm test

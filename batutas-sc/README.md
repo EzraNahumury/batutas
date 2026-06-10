@@ -1,5 +1,7 @@
 # 🪨📄✂️ BATUTAS — Smart Contracts
 
+[![Smart Contracts CI](https://github.com/EzraNahumury/batutas/actions/workflows/smart-contracts.yml/badge.svg)](https://github.com/EzraNahumury/batutas/actions/workflows/smart-contracts.yml)
+
 Provably-fair, on-chain Rock–Paper–Scissors against the protocol, built with
 **Hardhat + Solidity 0.8.24** for **Celo Mainnet** and optimized for **MiniPay**.
 
