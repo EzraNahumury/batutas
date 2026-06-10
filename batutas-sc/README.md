@@ -95,8 +95,12 @@ cp .env.example .env   # fill PRIVATE_KEY (throwaway) + CELOSCAN_API_KEY
 
 ```bash
 npm run compile
-npm test          # 19 tests: funds, commit-reveal (win/draw/lose), refund, admin
+npm test          # 53 tests: funds, commit-reveal, reserve, access control, pause
+npm run coverage  # solidity-coverage report (./coverage)
 ```
+
+**Coverage (production contracts):** 100% statements · 100% functions ·
+100% lines · ~92% branches. Test-only helpers are excluded via `.solcover.js`.
 
 ## 🚀 Deploy
 
