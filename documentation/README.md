@@ -241,4 +241,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-10 08:59:00 - chore: rotate color scheme [pr 09 #1] (primary=#c9723f accent=#85b877 bg=#1f6517)
 - 2026-06-10 08:59:00 - chore: refresh design tokens [pr 09 #2] (primary=#2e229c accent=#a25fa7 bg=#a60930)
 - 2026-06-10 08:59:00 - docs: note theme change [pr 09 #3] (primary=#eb40c3 accent=#04a526 bg=#1ceef1)
+- 2026-06-10 08:59:01 - style: tweak theme palette [pr 09 #4] (primary=#e76c89 accent=#99e35e bg=#b13e8d)
 <!-- changelog:end -->
