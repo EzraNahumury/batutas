@@ -293,4 +293,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-10 09:02:11 - refactor: bump css variables [pr 22 #1] (primary=#8e8ed8 accent=#18916c bg=#317a78)
 - 2026-06-10 09:02:11 - chore: refresh design tokens [pr 22 #2] (primary=#da2858 accent=#911e49 bg=#ec34f3)
 - 2026-06-10 09:02:11 - docs: note theme change [pr 22 #3] (primary=#f7f2f0 accent=#96a5fb bg=#31d211)
+- 2026-06-10 09:02:11 - docs: update changelog entry [pr 22 #4] (primary=#dc592a accent=#330216 bg=#167341)
 <!-- changelog:end -->
