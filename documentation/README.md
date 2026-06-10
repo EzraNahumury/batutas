@@ -256,4 +256,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-10 08:59:43 - chore: rotate color scheme [pr 12 #4] (primary=#a6b6ef accent=#3f1ec2 bg=#cebb9c)
 - 2026-06-10 08:59:56 - style: restyle button hover [pr 13 #1] (primary=#fc0cf7 accent=#bb4dee bg=#188d4f)
 - 2026-06-10 08:59:56 - style: tweak theme palette [pr 13 #2] (primary=#cad89d accent=#a13f0e bg=#166461)
+- 2026-06-10 08:59:56 - style: adjust accent color [pr 13 #3] (primary=#a12bac accent=#06fc66 bg=#ee560b)
 <!-- changelog:end -->
