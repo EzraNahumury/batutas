@@ -12,7 +12,9 @@ async function main() {
   const amount = ethers.parseEther(process.env.RESERVE_CELO ?? "1");
   const batutas = await ethers.getContractAt("Batutas", deployment.address);
 
-  console.log(`Funding reserve of ${deployment.address} with ${ethers.formatEther(amount)} CELO...`);
+  console.log(
+    `Funding reserve of ${deployment.address} with ${ethers.formatEther(amount)} CELO...`,
+  );
   const tx = await batutas.fundReserve({ value: amount });
   console.log(`tx: ${tx.hash}`);
   await tx.wait();

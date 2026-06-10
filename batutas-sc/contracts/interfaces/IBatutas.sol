@@ -72,8 +72,7 @@ interface IBatutas {
     /// @notice The pending (unrevealed) commit of a player, if any.
     /// @return commitHash The stored commit hash (zero if none).
     /// @return commitBlock The block at which the commit was made.
-    function pendingCommit(address player)
-        external
-        view
-        returns (bytes32 commitHash, uint256 commitBlock);
+    function pendingCommit(
+        address player
+    ) external view returns (bytes32 commitHash, uint256 commitBlock);
 }

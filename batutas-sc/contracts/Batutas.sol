@@ -156,12 +156,10 @@ contract Batutas is IBatutas, Ownable, ReentrancyGuard, Pausable {
     }
 
     /// @inheritdoc IBatutas
-    function revealMove(Move move, bytes32 secret)
-        external
-        override
-        whenNotPaused
-        returns (Result)
-    {
+    function revealMove(
+        Move move,
+        bytes32 secret
+    ) external override whenNotPaused returns (Result) {
         Round storage round = _rounds[msg.sender];
         if (round.commitHash == bytes32(0)) revert NoActiveRound();
         if (block.number <= round.commitBlock) revert RevealTooEarly();
@@ -201,10 +199,12 @@ contract Batutas is IBatutas, Ownable, ReentrancyGuard, Pausable {
 
     /// @dev Apply the round result to balances and the reserve.
     /// @return payout Batutas credited back to the player for this round.
-    function _settle(address player, Result result, uint256 roundStake, uint256 locked)
-        private
-        returns (uint256 payout)
-    {
+    function _settle(
+        address player,
+        Result result,
+        uint256 roundStake,
+        uint256 locked
+    ) private returns (uint256 payout) {
         if (result == Result.Win) {
             // Player receives the full win payout (their stake + locked profit).
             payout = roundStake + locked;
@@ -289,12 +289,9 @@ contract Batutas is IBatutas, Ownable, ReentrancyGuard, Pausable {
     }
 
     /// @inheritdoc IBatutas
-    function pendingCommit(address player)
-        external
-        view
-        override
-        returns (bytes32 commitHash, uint256 commitBlock)
-    {
+    function pendingCommit(
+        address player
+    ) external view override returns (bytes32 commitHash, uint256 commitBlock) {
         Round storage round = _rounds[player];
         return (round.commitHash, round.commitBlock);
     }

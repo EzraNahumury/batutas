@@ -293,10 +293,9 @@ describe("Batutas", () => {
     it("pauses deposits and gameplay", async () => {
       const { batutas, alice } = await loadFixture(fundedFixture);
       await batutas.pause();
-      await expect(batutas.connect(alice).deposit({ value: ONE_CELO })).to.be.revertedWithCustomError(
-        batutas,
-        "EnforcedPause",
-      );
+      await expect(
+        batutas.connect(alice).deposit({ value: ONE_CELO }),
+      ).to.be.revertedWithCustomError(batutas, "EnforcedPause");
       await expect(
         batutas.connect(alice).commitMove(commitHashOf(Move.Rock, ethers.id("p"))),
       ).to.be.revertedWithCustomError(batutas, "EnforcedPause");
