@@ -19,8 +19,14 @@ function commitHashOf(move: number, secret: string): string {
 }
 
 async function main() {
-  const [player] = await ethers.getSigners();
-  const batutas = await ethers.getContractAt("Batutas", deployment.address);
+  // Play as the dedicated player wallet (PRIVATE_KEY_PLAYER), independent of
+  // the deployer/owner key used for admin operations.
+  const rawKey = process.env.PRIVATE_KEY_PLAYER;
+  if (!rawKey) throw new Error("PRIVATE_KEY_PLAYER is not set in .env");
+  const playerKey = rawKey.startsWith("0x") ? rawKey : `0x${rawKey}`;
+  const player = new ethers.Wallet(playerKey, ethers.provider);
+
+  const batutas = (await ethers.getContractAt("Batutas", deployment.address)).connect(player);
 
   console.log(`Network:  ${network.name}`);
   console.log(`Contract: ${deployment.address}`);
