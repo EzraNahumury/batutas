@@ -370,4 +370,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-11 09:26:17 - style: adjust accent color [pr 16 #2] (primary=#3be956 accent=#6e6c39 bg=#e6c131)
 - 2026-06-11 09:26:18 - refactor: bump css variables [pr 16 #3] (primary=#c78ffe accent=#cdd5e8 bg=#a22afe)
 - 2026-06-11 09:26:18 - chore: rotate color scheme [pr 16 #4] (primary=#fd38ef accent=#53e562 bg=#f98fca)
+- 2026-06-11 09:26:34 - docs: note theme change [pr 17 #1] (primary=#eacacc accent=#408ae6 bg=#e2ac7d)
+- 2026-06-11 09:26:34 - style: tweak theme palette [pr 17 #2] (primary=#86185e accent=#deda4d bg=#b63a69)
+- 2026-06-11 09:26:35 - refactor: bump css variables [pr 17 #3] (primary=#25b286 accent=#5c9f05 bg=#b92a02)
+- 2026-06-11 09:26:35 - style: adjust accent color [pr 17 #4] (primary=#140c5b accent=#10c9e4 bg=#9d5d8d)
 <!-- changelog:end -->
