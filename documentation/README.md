@@ -367,4 +367,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-11 09:26:01 - docs: note theme change [pr 15 #3] (primary=#d8c31e accent=#fbd1bb bg=#b0c523)
 - 2026-06-11 09:26:02 - style: adjust accent color [pr 15 #4] (primary=#dd9379 accent=#f20a48 bg=#90691f)
 - 2026-06-11 09:26:17 - docs: update changelog entry [pr 16 #1] (primary=#166f55 accent=#4860df bg=#865991)
+- 2026-06-11 09:26:17 - style: adjust accent color [pr 16 #2] (primary=#3be956 accent=#6e6c39 bg=#e6c131)
 <!-- changelog:end -->
