@@ -438,4 +438,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-12 08:49:59 - chore: refresh design tokens [pr 08 #2] (primary=#e9ac68 accent=#83def9 bg=#da85cd)
 - 2026-06-12 08:50:00 - style: tweak theme palette [pr 08 #3] (primary=#77df06 accent=#b7d53c bg=#cabee4)
 - 2026-06-12 08:50:00 - chore: refresh design tokens [pr 08 #4] (primary=#f8ddbf accent=#98b6d8 bg=#fef638)
+- 2026-06-12 08:50:11 - style: tweak theme palette [pr 09 #1] (primary=#91c6b6 accent=#4747c7 bg=#98ff8e)
 <!-- changelog:end -->
