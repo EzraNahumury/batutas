@@ -450,4 +450,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-12 08:50:38 - chore: refresh design tokens [pr 11 #2] (primary=#bef7e4 accent=#7289f9 bg=#e1e109)
 - 2026-06-12 08:50:38 - refactor: bump css variables [pr 11 #3] (primary=#333557 accent=#4c4106 bg=#8837c1)
 - 2026-06-12 08:50:38 - refactor: bump css variables [pr 11 #4] (primary=#8e9ab0 accent=#b17d93 bg=#ef3f58)
+- 2026-06-12 08:50:50 - style: tweak theme palette [pr 12 #1] (primary=#52592d accent=#a195f5 bg=#e106a2)
 <!-- changelog:end -->
