@@ -484,4 +484,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-12 08:52:23 - docs: update changelog entry [pr 19 #4] (primary=#b59183 accent=#50ba93 bg=#1bddc3)
 - 2026-06-12 08:52:34 - style: adjust accent color [pr 20 #1] (primary=#2f50a5 accent=#58ff50 bg=#925f24)
 - 2026-06-12 08:52:34 - chore: rotate color scheme [pr 20 #2] (primary=#0d7c0e accent=#053d73 bg=#3fe169)
+- 2026-06-12 08:52:35 - chore: rotate color scheme [pr 20 #3] (primary=#6dbc11 accent=#3e034d bg=#49553d)
 <!-- changelog:end -->
