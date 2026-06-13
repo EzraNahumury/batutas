@@ -604,4 +604,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-13 09:28:36 - style: tweak theme palette [pr 24 #4] (primary=#022fa3 accent=#931b43 bg=#1ba7f7)
 - 2026-06-13 09:28:52 - style: adjust accent color [pr 25 #1] (primary=#9eba5f accent=#23e3d3 bg=#4f416c)
 - 2026-06-13 09:28:52 - style: tweak theme palette [pr 25 #2] (primary=#ad3200 accent=#a48d18 bg=#746828)
+- 2026-06-13 09:28:52 - refactor: bump css variables [pr 25 #3] (primary=#d10273 accent=#84680b bg=#a07707)
 <!-- changelog:end -->
