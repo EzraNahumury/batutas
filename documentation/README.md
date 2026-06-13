@@ -508,4 +508,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-12 08:53:39 - style: adjust accent color [pr 25 #4] (primary=#4cd847 accent=#3c9047 bg=#841b28)
 - 2026-06-13 09:23:06 - style: adjust accent color [pr 01 #1] (primary=#9c1062 accent=#68ea28 bg=#f084f4)
 - 2026-06-13 09:23:06 - style: restyle button hover [pr 01 #2] (primary=#4f1f35 accent=#6c5ee0 bg=#4d0418)
+- 2026-06-13 09:23:06 - chore: refresh design tokens [pr 01 #3] (primary=#774e23 accent=#8638af bg=#b78108)
 <!-- changelog:end -->
