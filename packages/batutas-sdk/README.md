@@ -50,7 +50,13 @@ const outcome = NUM_TO_RESULT[resultNum];           // "lose" | "draw" | "win"
 | `BATUTAS_ADDRESS` | Deployed contract on Celo Mainnet. |
 | `BATUTAS_CHAIN_ID` | `42220`. |
 | `CELO_EXPLORER` / `PEG` | `https://celoscan.io` / `1000`. |
-| `batutasAbi` | viem-compatible ABI (`as const`). |
+| `batutasAbi` | Full viem-compatible contract ABI (`as const`, 54 entries). |
+
+## Changelog
+
+- **0.2.0** — `batutasAbi` is now the full contract ABI (54 entries, generated from the compiled
+  artifact), the single source of truth for both the frontend and the integration helper.
+- **0.1.0** — initial release: constants, enums, `makeSecret`/`buildCommitHash`, minimal ABI.
 
 ## License
 
