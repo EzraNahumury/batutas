@@ -506,4 +506,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-12 08:53:39 - docs: note theme change [pr 25 #2] (primary=#d39500 accent=#9872ca bg=#00113a)
 - 2026-06-12 08:53:39 - style: restyle button hover [pr 25 #3] (primary=#bb274b accent=#948b37 bg=#eeb179)
 - 2026-06-12 08:53:39 - style: adjust accent color [pr 25 #4] (primary=#4cd847 accent=#3c9047 bg=#841b28)
+- 2026-06-13 09:23:06 - style: adjust accent color [pr 01 #1] (primary=#9c1062 accent=#68ea28 bg=#f084f4)
 <!-- changelog:end -->
