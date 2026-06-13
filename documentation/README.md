@@ -600,4 +600,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-13 09:28:18 - style: tweak theme palette [pr 23 #4] (primary=#761f7d accent=#e28590 bg=#6acee5)
 - 2026-06-13 09:28:35 - refactor: bump css variables [pr 24 #1] (primary=#1d7686 accent=#f27125 bg=#ad0657)
 - 2026-06-13 09:28:35 - chore: rotate color scheme [pr 24 #2] (primary=#2d6a66 accent=#83aa84 bg=#fb0250)
+- 2026-06-13 09:28:35 - chore: rotate color scheme [pr 24 #3] (primary=#9d61c1 accent=#83edd0 bg=#c805c2)
 <!-- changelog:end -->
