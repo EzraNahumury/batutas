@@ -1,23 +1,25 @@
 # BATUTAS — Frontend Integration SDK
 
-Everything the frontend needs to talk to the live BATUTAS contract. **Self-contained
-and framework-agnostic at the core** — copy this folder into your frontend app.
+Everything the frontend needs to talk to the live BATUTAS contract. The core
+primitives (ABI, address, chain id, commit-reveal helpers) come from the published
+[`batutas-sdk`](https://www.npmjs.com/package/batutas-sdk); this folder adds
+framework-agnostic niceties (numeric enums, labels, CELO<->batutas conversions) and a
+reference wagmi hook.
 
 > This folder does not modify the contracts or the frontend; it's a drop-in helper.
 
 ## Contents
 
-| File                     | Purpose                                                                   |
-| ------------------------ | ------------------------------------------------------------------------- |
-| `batutasAbi.json`        | Contract ABI (54 entries) — import directly, no compile needed            |
-| `index.ts`               | Address, chain id, peg constants, enums, and commit-reveal helpers (viem) |
-| `useBatutas.example.tsx` | Reference wagmi hook for the full flow                                    |
+| File                     | Purpose                                                                       |
+| ------------------------ | ----------------------------------------------------------------------------- |
+| `index.ts`               | Re-exports the SDK (ABI, address, chain id) plus enums, labels, conversions   |
+| `useBatutas.example.tsx` | Reference wagmi hook for the full flow                                         |
 
 ## Setup
 
 ```bash
 # in the frontend
-npm i viem wagmi @tanstack/react-query
+npm i batutas-sdk viem wagmi @tanstack/react-query
 # then copy this `integration/` folder in (e.g. src/lib/batutas/)
 ```
 
