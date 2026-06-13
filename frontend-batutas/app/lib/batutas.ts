@@ -1,9 +1,10 @@
 import { keccak256, encodePacked, toHex } from "viem";
+import { BATUTAS_ADDRESS as SDK_BATUTAS_ADDRESS } from "batutas-sdk";
 
-/* Deployed BATUTAS game contract — Celo Mainnet (verified).
-   Override via NEXT_PUBLIC_CONTRACT_ADDRESS if redeployed. */
+/* Default to the SDK's verified Celo Mainnet address; allow an env override
+   for redeploys via NEXT_PUBLIC_CONTRACT_ADDRESS. */
 export const BATUTAS_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
-  "0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf") as `0x${string}`;
+  SDK_BATUTAS_ADDRESS) as `0x${string}`;
 
 /* Chain id, explorer and peg now come from the published batutas-sdk. */
 export { BATUTAS_CHAIN_ID, CELO_EXPLORER, PEG } from "batutas-sdk";
