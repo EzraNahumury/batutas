@@ -33,6 +33,14 @@ atmosphere. Audio is managed by `app/lib/useBackgroundMusic.ts`:
 - A single playback controller owns the play/pause path (gesture-unlock + visibility), backed by one
   reused audio element.
 
+## Shared SDK
+
+The commit-reveal primitives (contract address, ABI, move/outcome enums, `makeSecret`,
+`buildCommitHash`) come from the published [`batutas-sdk`](https://www.npmjs.com/package/batutas-sdk)
+package. `app/lib/batutas.ts` is a thin adapter that re-exports the SDK and adds the app-specific
+`localStorage` round-storage helpers plus the `NEXT_PUBLIC_CONTRACT_ADDRESS` env override. To change
+the contract ABI or core helpers, update `packages/batutas-sdk`, publish, and bump the dependency.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
