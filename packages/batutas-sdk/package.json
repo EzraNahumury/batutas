@@ -1,6 +1,6 @@
 {
   "name": "batutas-sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Commit-reveal SDK for BATUTAS — provably-fair on-chain Rock-Paper-Scissors on Celo Mainnet.",
   "type": "module",
   "main": "./dist/index.cjs",
