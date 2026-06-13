@@ -566,4 +566,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-13 09:26:15 - style: tweak theme palette [pr 15 #2] (primary=#ea8ae4 accent=#57072b bg=#eee59c)
 - 2026-06-13 09:26:16 - style: restyle button hover [pr 15 #3] (primary=#44ca74 accent=#48b6b3 bg=#0b9b4a)
 - 2026-06-13 09:26:16 - style: tweak theme palette [pr 15 #4] (primary=#f6b663 accent=#50d05f bg=#c37dca)
+- 2026-06-13 09:26:28 - docs: update changelog entry [pr 16 #1] (primary=#a111bf accent=#a31d60 bg=#8362c9)
+- 2026-06-13 09:26:29 - docs: update changelog entry [pr 16 #2] (primary=#a83271 accent=#e71bbe bg=#9353c3)
+- 2026-06-13 09:26:29 - docs: update changelog entry [pr 16 #3] (primary=#9f1376 accent=#cc9e5d bg=#bb7ae2)
+- 2026-06-13 09:26:29 - docs: note theme change [pr 16 #4] (primary=#f054a7 accent=#ce700f bg=#445cb0)
 <!-- changelog:end -->
