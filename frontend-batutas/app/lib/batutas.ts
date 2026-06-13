@@ -1,4 +1,3 @@
-import { keccak256, encodePacked, toHex } from "viem";
 import { BATUTAS_ADDRESS as SDK_BATUTAS_ADDRESS } from "batutas-sdk";
 import type { Move } from "batutas-sdk";
 
@@ -14,17 +13,8 @@ export { BATUTAS_CHAIN_ID, CELO_EXPLORER, PEG } from "batutas-sdk";
 export type { Move, Outcome } from "batutas-sdk";
 export { MOVE_NUM, NUM_TO_MOVE, NUM_TO_RESULT } from "batutas-sdk";
 
-/** 32 random bytes, kept client-side until reveal. */
-export function makeSecret(): `0x${string}` {
-  const b = new Uint8Array(32);
-  crypto.getRandomValues(b);
-  return toHex(b);
-}
-
-/** keccak256(abi.encodePacked(uint8 move, bytes32 secret)) — must match contract. */
-export function buildCommitHash(moveNum: number, secret: `0x${string}`): `0x${string}` {
-  return keccak256(encodePacked(["uint8", "bytes32"], [moveNum, secret]));
-}
+/* makeSecret and buildCommitHash now come from batutas-sdk. */
+export { makeSecret, buildCommitHash } from "batutas-sdk";
 
 /* Persist the in-flight round secret so a refresh can still reveal it. */
 type SavedRound = { move: Move; moveNum: number; secret: `0x${string}` };
