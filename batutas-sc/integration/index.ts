@@ -1,22 +1,31 @@
 // BATUTAS frontend integration SDK.
 //
-// Drop this folder into your frontend (viem/wagmi). It contains the contract
-// ABI, address, and the helpers needed for the commit-reveal flow.
+// Thin, framework-agnostic layer over the published `batutas-sdk` package: it
+// re-exports the contract ABI, address, chain id and commit-reveal helpers, and
+// adds the integration-specific niceties (numeric Move/Result enums, labels, and
+// CELO<->batutas conversions) on top.
 //
-// Install peer dep in the frontend: `npm i viem`
+// Install peer deps in the frontend: `npm i batutas-sdk viem`
 
-import { keccak256, encodePacked, type Hex } from "viem";
-import batutasAbi from "./batutasAbi.json";
+import type { Hex } from "viem";
+import {
+  batutasAbi,
+  BATUTAS_ADDRESS as SDK_BATUTAS_ADDRESS,
+  BATUTAS_CHAIN_ID,
+  makeSecret,
+  buildCommitHash,
+} from "batutas-sdk";
 
 // -----------------------------------------------------------------------------
-// Deployment (Celo Mainnet)
+// Deployment (Celo Mainnet) — sourced from batutas-sdk
 // -----------------------------------------------------------------------------
 
 export const BATUTAS_ABI = batutasAbi;
-export const BATUTAS_ADDRESS = "0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf" as const;
-export const CELO_CHAIN_ID = 42220;
+export const BATUTAS_ADDRESS = SDK_BATUTAS_ADDRESS;
+export const CELO_CHAIN_ID = BATUTAS_CHAIN_ID;
 
-// Economy / peg.
+// Economy / peg. (batutas-sdk exposes PEG as a number; these are the bigint
+// forms the on-chain wei math needs.)
 export const BATUTAS_PER_CELO = 1000n;
 export const WEI_PER_BATUTA = 10n ** 15n; // 1e18 / 1000
 
@@ -49,15 +58,11 @@ export const RESULT_LABEL: Record<Result, string> = {
 };
 
 // -----------------------------------------------------------------------------
-// Commit-reveal helpers
+// Commit-reveal helpers (delegated to batutas-sdk)
 // -----------------------------------------------------------------------------
 
 /** Generate a fresh 32-byte secret. Store it client-side until reveal. */
-export function randomSecret(): Hex {
-  const bytes = new Uint8Array(32);
-  crypto.getRandomValues(bytes);
-  return `0x${Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("")}` as Hex;
-}
+export const randomSecret = makeSecret;
 
 /**
  * Build the commit hash exactly as the contract expects:
@@ -66,7 +71,7 @@ export function randomSecret(): Hex {
  * @returns the commit hash, plus the move and secret to keep for revealing.
  */
 export function buildCommit(move: Move, secret: Hex = randomSecret()) {
-  const commitHash = keccak256(encodePacked(["uint8", "bytes32"], [move, secret]));
+  const commitHash = buildCommitHash(move, secret);
   return { commitHash, secret, move };
 }
 
