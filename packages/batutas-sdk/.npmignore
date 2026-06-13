@@ -1,0 +1,8 @@
+src
+test
+tsup.config.ts
+tsconfig.json
+vitest.config.ts
+*.tsbuildinfo
+.gitignore
+PUBLISHING.md

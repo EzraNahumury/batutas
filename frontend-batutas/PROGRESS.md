@@ -116,3 +116,9 @@
 - [audio-fix] consolidate play/pause into one controller effect
 - [audio-fix] reuse a single audio element across remounts
 - [audio-fix] detach gesture listener after first unlock
+- [sdk] scaffold batutas-sdk package (tsup dual ESM/CJS + types)
+- [sdk] port pure commit-reveal core from frontend (no React/storage)
+- [sdk] lock commit-hash encoding with known keccak vectors
+- [sdk] vitest suite green: secret format, determinism, enum round-trips
+- [sdk] README + npm downloads badge; MIT license
+- [sdk] dry-run-clean tarball (dist + README + LICENSE only)
