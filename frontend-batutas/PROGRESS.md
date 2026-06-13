@@ -129,3 +129,6 @@
 - [sdk-wire] source makeSecret/buildCommitHash from the SDK
 - [sdk-wire] source contract ABI from the SDK, drop the local copy
 - [sdk-wire] batutas.ts now a thin adapter; next build verified clean
+- [sdk-v2] expand batutas-sdk to the full 54-entry ABI, release 0.2.0
+- [sdk-v2] integration helper consumes the SDK; delete the third ABI copy
+- [sdk-v2] bump frontend to batutas-sdk@^0.2.0; next build verified clean
