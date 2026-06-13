@@ -5,9 +5,8 @@ import { keccak256, encodePacked, toHex } from "viem";
 export const BATUTAS_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
   "0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf") as `0x${string}`;
 
-export const BATUTAS_CHAIN_ID = 42220; // Celo Mainnet
-export const CELO_EXPLORER = "https://celoscan.io";
-export const PEG = 1000; // 1 CELO = 1000 batutas
+/* Chain id, explorer and peg now come from the published batutas-sdk. */
+export { BATUTAS_CHAIN_ID, CELO_EXPLORER, PEG } from "batutas-sdk";
 
 /* Move: Rock=0, Paper=1, Scissors=2 — Result: Lose=0, Draw=1, Win=2 */
 export type Move = "rock" | "paper" | "scissors";
