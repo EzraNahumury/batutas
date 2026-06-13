@@ -122,3 +122,10 @@
 - [sdk] vitest suite green: secret format, determinism, enum round-trips
 - [sdk] README + npm downloads badge; MIT license
 - [sdk] dry-run-clean tarball (dist + README + LICENSE only)
+- [sdk] publish batutas-sdk@0.1.0 to the npm registry
+- [sdk-wire] add batutas-sdk dependency to the frontend
+- [sdk-wire] source chain/explorer/peg + contract address from the SDK
+- [sdk-wire] source move/outcome enums and types from the SDK
+- [sdk-wire] source makeSecret/buildCommitHash from the SDK
+- [sdk-wire] source contract ABI from the SDK, drop the local copy
+- [sdk-wire] batutas.ts now a thin adapter; next build verified clean
