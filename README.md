@@ -18,6 +18,8 @@
   <img alt="Status" src="https://img.shields.io/badge/status-WIP-yellow">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="MiniPay" src="https://img.shields.io/badge/MiniPay-ready-9C27B0">
+  <a href="https://www.npmjs.com/package/batutas-sdk"><img alt="batutas-sdk on npm" src="https://img.shields.io/npm/v/batutas-sdk?color=cb3837&logo=npm&label=batutas-sdk"></a>
+  <a href="https://www.npmjs.com/package/batutas-sdk"><img alt="batutas-sdk downloads" src="https://img.shields.io/npm/dm/batutas-sdk?color=cb3837&logo=npm&label=downloads"></a>
 </p>
 
 > ℹ️ **`BATUTAS`** is named after **Batu–Gunting–Kertas** — the Indonesian Rock–Paper–Scissors hand game (locally called *suit*). "Batutas" is also the name of the in-game currency you earn, stake, and withdraw.
