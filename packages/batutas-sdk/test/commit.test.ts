@@ -23,3 +23,14 @@ describe("buildCommitHash", () => {
     expect(buildCommitHash(1, secret)).toBe(buildCommitHash(1, secret));
   });
 });
+
+describe("makeSecret", () => {
+  it("returns 32 bytes as a 0x-prefixed 64-hex-char string", () => {
+    const s = makeSecret();
+    expect(s).toMatch(/^0x[0-9a-f]{64}$/);
+  });
+
+  it("produces different values across calls", () => {
+    expect(makeSecret()).not.toBe(makeSecret());
+  });
+});
