@@ -1,5 +1,6 @@
 import { keccak256, encodePacked, toHex } from "viem";
 import { BATUTAS_ADDRESS as SDK_BATUTAS_ADDRESS } from "batutas-sdk";
+import type { Move } from "batutas-sdk";
 
 /* Default to the SDK's verified Celo Mainnet address; allow an env override
    for redeploys via NEXT_PUBLIC_CONTRACT_ADDRESS. */
@@ -9,12 +10,9 @@ export const BATUTAS_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
 /* Chain id, explorer and peg now come from the published batutas-sdk. */
 export { BATUTAS_CHAIN_ID, CELO_EXPLORER, PEG } from "batutas-sdk";
 
-/* Move: Rock=0, Paper=1, Scissors=2 — Result: Lose=0, Draw=1, Win=2 */
-export type Move = "rock" | "paper" | "scissors";
-export type Outcome = "lose" | "draw" | "win";
-export const MOVE_NUM: Record<Move, number> = { rock: 0, paper: 1, scissors: 2 };
-export const NUM_TO_MOVE: Move[] = ["rock", "paper", "scissors"];
-export const NUM_TO_RESULT: Outcome[] = ["lose", "draw", "win"];
+/* Move/outcome types and numeric maps now come from batutas-sdk. */
+export type { Move, Outcome } from "batutas-sdk";
+export { MOVE_NUM, NUM_TO_MOVE, NUM_TO_RESULT } from "batutas-sdk";
 
 /** 32 random bytes, kept client-side until reveal. */
 export function makeSecret(): `0x${string}` {
