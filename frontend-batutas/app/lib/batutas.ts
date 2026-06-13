@@ -1,3 +1,9 @@
+/**
+ * Thin adapter over the published `batutas-sdk`. Re-exports the SDK's pure
+ * commit-reveal primitives (constants, enums, helpers, ABI) and adds the two
+ * app-specific concerns the SDK deliberately omits: the `NEXT_PUBLIC_CONTRACT_ADDRESS`
+ * env override and the `localStorage` round-storage helpers.
+ */
 import { BATUTAS_ADDRESS as SDK_BATUTAS_ADDRESS } from "batutas-sdk";
 import type { Move } from "batutas-sdk";
 
