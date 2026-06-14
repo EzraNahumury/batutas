@@ -12,7 +12,9 @@
     "format:check": "prettier --check 'contracts/**/*.sol' 'test/**/*.ts' 'scripts/**/*.ts'",
     "coverage": "hardhat coverage",
     "deploy:sepolia": "hardhat run scripts/deploy.ts --network celoSepolia",
-    "deploy:celo": "hardhat run scripts/deploy.ts --network celo"
+    "deploy:celo": "hardhat run scripts/deploy.ts --network celo",
+    "deploy:token:sepolia": "hardhat run scripts/deploy-token.ts --network celoSepolia",
+    "deploy:token:celo": "hardhat run scripts/deploy-token.ts --network celo"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
