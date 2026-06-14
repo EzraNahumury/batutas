@@ -10,6 +10,10 @@ typechain-types/
 coverage/
 coverage.json
 
+# Subgraph build artifacts
+subgraph/generated/
+subgraph/build/
+
 # Environment & secrets
 .env
 .env.local
