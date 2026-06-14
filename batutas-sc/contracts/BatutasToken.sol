@@ -11,4 +11,13 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 ///      integrations that prefer a transferable ERC-20 (wallets, DEXes, etc.).
 contract BatutasToken is ERC20, Ownable {
     constructor(address initialOwner) ERC20("Batutas", "BTS") Ownable(initialOwner) {}
+
+    /// @notice Mint new batutas tokens to an account.
+    /// @dev Restricted to the owner (intended to be the game contract or its
+    ///      admin, so issuance stays tied to real CELO deposits).
+    /// @param to Recipient of the freshly minted tokens.
+    /// @param amount Amount to mint (18 decimals).
+    function mint(address to, uint256 amount) external onlyOwner {
+        _mint(to, amount);
+    }
 }
