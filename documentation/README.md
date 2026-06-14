@@ -661,4 +661,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-14 12:05:10 - docs: update changelog entry [pr 14 #1] (primary=#78da85 accent=#f56316 bg=#3c20ab)
 - 2026-06-14 12:05:11 - style: tweak theme palette [pr 14 #2] (primary=#c5e336 accent=#b21503 bg=#858878)
 - 2026-06-14 12:05:11 - chore: rotate color scheme [pr 14 #3] (primary=#2028a9 accent=#0697cf bg=#a7c4c2)
+- 2026-06-14 12:05:11 - docs: note theme change [pr 14 #4] (primary=#731751 accent=#d1d519 bg=#bfbc9c)
 <!-- changelog:end -->
