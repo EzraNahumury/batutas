@@ -19,6 +19,7 @@ withdraw batutas back to CELO at a fixed peg (**1 CELO = 1000 batutas**).
 batutas-sc/
 ├── contracts/
 │   ├── Batutas.sol            # core game: funds, commit-reveal, settlement, admin
+│   ├── BatutasToken.sol       # optional ERC-20 batutas (BTS): mintable, burnable, capped
 │   ├── interfaces/
 │   │   └── IBatutas.sol       # player-facing ABI + events
 │   ├── libraries/
@@ -36,6 +37,19 @@ batutas-sc/
 **Separation of concern:** game rules ([RPSLogic](contracts/libraries/RPSLogic.sol))
 and the public ABI ([IBatutas](contracts/interfaces/IBatutas.sol)) are isolated
 from fund handling and round bookkeeping in [Batutas.sol](contracts/Batutas.sol).
+
+### 🪙 BatutasToken (optional ERC-20)
+
+[BatutasToken.sol](contracts/BatutasToken.sol) is a **standalone, optional** ERC-20
+(`Batutas` / **BTS**) for integrations that prefer a transferable token (wallets,
+DEXes). It is **not** wired into the live game — `Batutas.sol` uses internal
+balance accounting and is unaffected.
+
+- **Mintable** — `mint(to, amount)`, owner-only (issuance stays controlled).
+- **Burnable** — holders `burn` / `burnFrom` their own tokens.
+- **Capped** — `MAX_SUPPLY` of 1,000,000,000 BTS; mints beyond it revert.
+
+Built on OpenZeppelin `ERC20` / `ERC20Burnable` / `ERC20Capped` / `Ownable`.
 
 ---
 
