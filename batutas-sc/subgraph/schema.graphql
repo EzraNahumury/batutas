@@ -1,0 +1,58 @@
+type Player @entity {
+  "Player address"
+  id: Bytes!
+  totalDeposited: BigInt!
+  totalWithdrawn: BigInt!
+  roundsPlayed: Int!
+  wins: Int!
+  losses: Int!
+  draws: Int!
+  "The currently committed (unrevealed) round, if any"
+  activeRound: Round
+  rounds: [Round!]! @derivedFrom(field: "player")
+}
+
+type Round @entity {
+  "keccak of player + commitBlock"
+  id: Bytes!
+  player: Player!
+  playerMove: Int
+  houseMove: Int
+  "0 = Lose, 1 = Draw, 2 = Win (null until revealed)"
+  result: Int
+  stake: BigInt!
+  payout: BigInt!
+  "Committed | Revealed | Refunded"
+  status: String!
+  committedAtBlock: BigInt!
+  committedAt: BigInt!
+  revealedAt: BigInt
+}
+
+type Deposit @entity(immutable: true) {
+  id: Bytes!
+  player: Player!
+  celoIn: BigInt!
+  batutasOut: BigInt!
+  timestamp: BigInt!
+}
+
+type Withdrawal @entity(immutable: true) {
+  id: Bytes!
+  player: Player!
+  batutasIn: BigInt!
+  celoOut: BigInt!
+  timestamp: BigInt!
+}
+
+type GlobalStat @entity {
+  "Singleton id = 'global'"
+  id: String!
+  totalRounds: Int!
+  totalWins: Int!
+  totalLosses: Int!
+  totalDraws: Int!
+  totalDepositedCelo: BigInt!
+  totalWithdrawnCelo: BigInt!
+  uniquePlayers: Int!
+}
