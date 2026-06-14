@@ -635,4 +635,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-14 12:03:03 - style: tweak theme palette [pr 07 #3] (primary=#26c522 accent=#b576d6 bg=#258c8d)
 - 2026-06-14 12:03:03 - style: adjust accent color [pr 07 #4] (primary=#bff1fd accent=#67b97d bg=#40c1e0)
 - 2026-06-14 12:03:20 - chore: rotate color scheme [pr 08 #1] (primary=#15eb8f accent=#73a419 bg=#513e31)
+- 2026-06-14 12:03:20 - chore: rotate color scheme [pr 08 #2] (primary=#2f2175 accent=#07b2d3 bg=#69318b)
 <!-- changelog:end -->
