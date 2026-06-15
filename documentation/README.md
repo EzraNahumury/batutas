@@ -794,4 +794,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-15 09:04:13 - style: restyle button hover [pr 22 #2] (primary=#8899b1 accent=#58cb2e bg=#59d49a)
 - 2026-06-15 09:04:14 - docs: note theme change [pr 22 #3] (primary=#b56ea2 accent=#f49741 bg=#cf173c)
 - 2026-06-15 09:04:14 - docs: update changelog entry [pr 22 #4] (primary=#915be0 accent=#9ffabc bg=#973cb0)
+- 2026-06-15 09:04:28 - chore: rotate color scheme [pr 23 #1] (primary=#293104 accent=#727839 bg=#f47efd)
 <!-- changelog:end -->
