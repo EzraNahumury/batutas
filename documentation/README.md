@@ -800,4 +800,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-15 09:04:28 - chore: refresh design tokens [pr 23 #4] (primary=#578c70 accent=#45bbe1 bg=#743abd)
 - 2026-06-15 09:04:42 - chore: refresh design tokens [pr 24 #1] (primary=#463bd9 accent=#a683d0 bg=#675435)
 - 2026-06-15 09:04:42 - docs: update changelog entry [pr 24 #2] (primary=#cefb38 accent=#e575fa bg=#c569a5)
+- 2026-06-15 09:04:42 - chore: refresh design tokens [pr 24 #3] (primary=#30afd3 accent=#e91d73 bg=#7ff82e)
 <!-- changelog:end -->
