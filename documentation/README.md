@@ -792,4 +792,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-15 09:04:00 - style: tweak theme palette [pr 21 #4] (primary=#803362 accent=#1184bb bg=#f35a42)
 - 2026-06-15 09:04:13 - chore: refresh design tokens [pr 22 #1] (primary=#7f7a0c accent=#ccd189 bg=#c3ceb5)
 - 2026-06-15 09:04:13 - style: restyle button hover [pr 22 #2] (primary=#8899b1 accent=#58cb2e bg=#59d49a)
+- 2026-06-15 09:04:14 - docs: note theme change [pr 22 #3] (primary=#b56ea2 accent=#f49741 bg=#cf173c)
 <!-- changelog:end -->
