@@ -750,4 +750,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-15 09:01:38 - docs: update changelog entry [pr 11 #2] (primary=#e00d9e accent=#909191 bg=#cbc41c)
 - 2026-06-15 09:01:38 - docs: update changelog entry [pr 11 #3] (primary=#c043ae accent=#5c9e80 bg=#b9e273)
 - 2026-06-15 09:01:38 - docs: note theme change [pr 11 #4] (primary=#a7c38a accent=#5b8a95 bg=#ac5dbf)
+- 2026-06-15 09:01:51 - docs: note theme change [pr 12 #1] (primary=#8eca14 accent=#a42088 bg=#256ec2)
 <!-- changelog:end -->
