@@ -843,4 +843,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-16 08:59:22 - style: adjust accent color [pr 09 #3] (primary=#87087e accent=#6c3420 bg=#5b45fb)
 - 2026-06-16 08:59:22 - chore: refresh design tokens [pr 09 #4] (primary=#1a19b5 accent=#44bdd4 bg=#8da514)
 - 2026-06-16 08:59:35 - docs: update changelog entry [pr 10 #1] (primary=#e081d6 accent=#41ab3c bg=#2716b6)
+- 2026-06-16 08:59:35 - style: tweak theme palette [pr 10 #2] (primary=#b029ab accent=#537846 bg=#0d819c)
 <!-- changelog:end -->
