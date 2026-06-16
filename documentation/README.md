@@ -904,4 +904,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-16 09:02:48 - chore: refresh design tokens [pr 24 #4] (primary=#037b0a accent=#50371d bg=#91443d)
 - 2026-06-16 09:03:01 - chore: refresh design tokens [pr 25 #1] (primary=#50428d accent=#7bc2d9 bg=#2e97ab)
 - 2026-06-16 09:03:01 - style: restyle button hover [pr 25 #2] (primary=#b3b710 accent=#1c7c6b bg=#ef4f71)
+- 2026-06-16 09:03:02 - style: adjust accent color [pr 25 #3] (primary=#15ea84 accent=#6d2c39 bg=#4426dc)
 <!-- changelog:end -->
