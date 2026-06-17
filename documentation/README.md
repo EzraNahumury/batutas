@@ -910,4 +910,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-17 09:21:20 - refactor: bump css variables [pr 01 #2] (primary=#7d66b1 accent=#aa6403 bg=#81afe5)
 - 2026-06-17 09:21:20 - style: tweak theme palette [pr 01 #3] (primary=#93e06f accent=#5e5053 bg=#cff833)
 - 2026-06-17 09:21:20 - style: adjust accent color [pr 01 #4] (primary=#6304a4 accent=#90ef52 bg=#aaeba0)
+- 2026-06-17 09:21:33 - chore: rotate color scheme [pr 02 #1] (primary=#b42c6d accent=#9a2d0a bg=#f5b69d)
+- 2026-06-17 09:21:34 - style: tweak theme palette [pr 02 #2] (primary=#3a21fb accent=#13d60b bg=#b4204a)
+- 2026-06-17 09:21:34 - style: restyle button hover [pr 02 #3] (primary=#a8d310 accent=#888fe9 bg=#a2f7f7)
+- 2026-06-17 09:21:34 - docs: note theme change [pr 02 #4] (primary=#a38166 accent=#8680f9 bg=#69bdd5)
 <!-- changelog:end -->
