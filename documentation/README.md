@@ -922,4 +922,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-17 09:22:01 - style: restyle button hover [pr 04 #2] (primary=#eb1362 accent=#73e4a8 bg=#da8123)
 - 2026-06-17 09:22:01 - style: adjust accent color [pr 04 #3] (primary=#21eb81 accent=#be7dce bg=#806e4f)
 - 2026-06-17 09:22:02 - style: tweak theme palette [pr 04 #4] (primary=#b89aeb accent=#f4c795 bg=#806ef1)
+- 2026-06-17 09:22:14 - style: adjust accent color [pr 05 #1] (primary=#c7a8bb accent=#8c5d14 bg=#25bccb)
 <!-- changelog:end -->
