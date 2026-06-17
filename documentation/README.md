@@ -946,4 +946,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-17 09:23:25 - style: restyle button hover [pr 10 #2] (primary=#446755 accent=#e77db7 bg=#2294e1)
 - 2026-06-17 09:23:25 - chore: rotate color scheme [pr 10 #3] (primary=#2d73b8 accent=#72be6f bg=#c12a65)
 - 2026-06-17 09:23:26 - style: restyle button hover [pr 10 #4] (primary=#20b52d accent=#050e82 bg=#aaec95)
+- 2026-06-17 09:23:39 - style: restyle button hover [pr 11 #1] (primary=#49a53f accent=#442e59 bg=#b68a28)
+- 2026-06-17 09:23:39 - style: tweak theme palette [pr 11 #2] (primary=#835c3f accent=#be9e40 bg=#7c8b74)
+- 2026-06-17 09:23:39 - style: adjust accent color [pr 11 #3] (primary=#f84390 accent=#adf014 bg=#54845f)
+- 2026-06-17 09:23:39 - style: tweak theme palette [pr 11 #4] (primary=#439963 accent=#e9e576 bg=#bd933c)
 <!-- changelog:end -->
