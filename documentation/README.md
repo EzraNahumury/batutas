@@ -1044,4 +1044,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-18 09:34:26 - docs: update changelog entry [pr 09 #4] (primary=#7e1306 accent=#d4ff0e bg=#176d68)
 - 2026-06-18 09:34:39 - refactor: bump css variables [pr 10 #1] (primary=#14acb1 accent=#5c92f8 bg=#65532f)
 - 2026-06-18 09:34:39 - style: restyle button hover [pr 10 #2] (primary=#a2a622 accent=#591133 bg=#8132bf)
+- 2026-06-18 09:34:39 - style: adjust accent color [pr 10 #3] (primary=#14f973 accent=#3b6936 bg=#f9fbc9)
 <!-- changelog:end -->
