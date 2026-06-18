@@ -1053,4 +1053,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-18 09:35:07 - chore: refresh design tokens [pr 12 #1] (primary=#93beaf accent=#e2a68a bg=#c83a07)
 - 2026-06-18 09:35:07 - chore: refresh design tokens [pr 12 #2] (primary=#1fffaa accent=#62641a bg=#838cd4)
 - 2026-06-18 09:35:07 - chore: refresh design tokens [pr 12 #3] (primary=#eeb2b0 accent=#7cbc18 bg=#679ebe)
+- 2026-06-18 09:35:07 - style: adjust accent color [pr 12 #4] (primary=#89a16a accent=#68a8ec bg=#e0f914)
 <!-- changelog:end -->
