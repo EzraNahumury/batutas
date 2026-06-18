@@ -1087,4 +1087,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-18 09:37:09 - style: adjust accent color [pr 20 #3] (primary=#95046d accent=#1d0c05 bg=#858959)
 - 2026-06-18 09:37:10 - style: adjust accent color [pr 20 #4] (primary=#5d2dae accent=#f2d367 bg=#a4c035)
 - 2026-06-18 09:37:26 - chore: rotate color scheme [pr 21 #1] (primary=#933cba accent=#8fe28f bg=#fff358)
+- 2026-06-18 09:37:27 - chore: refresh design tokens [pr 21 #2] (primary=#73acad accent=#6dfc46 bg=#261d96)
 <!-- changelog:end -->
