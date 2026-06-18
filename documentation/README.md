@@ -1054,4 +1054,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-18 09:35:07 - chore: refresh design tokens [pr 12 #2] (primary=#1fffaa accent=#62641a bg=#838cd4)
 - 2026-06-18 09:35:07 - chore: refresh design tokens [pr 12 #3] (primary=#eeb2b0 accent=#7cbc18 bg=#679ebe)
 - 2026-06-18 09:35:07 - style: adjust accent color [pr 12 #4] (primary=#89a16a accent=#68a8ec bg=#e0f914)
+- 2026-06-18 09:35:21 - style: restyle button hover [pr 13 #1] (primary=#896eff accent=#ff68ee bg=#1c8e48)
+- 2026-06-18 09:35:21 - style: adjust accent color [pr 13 #2] (primary=#bfc4c6 accent=#335125 bg=#03de3f)
+- 2026-06-18 09:35:21 - docs: note theme change [pr 13 #3] (primary=#af739b accent=#deaa50 bg=#328654)
+- 2026-06-18 09:35:22 - style: tweak theme palette [pr 13 #4] (primary=#f8245a accent=#4d248b bg=#f4bf48)
 <!-- changelog:end -->
