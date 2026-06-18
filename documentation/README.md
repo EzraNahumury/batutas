@@ -1080,4 +1080,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-18 09:36:33 - refactor: bump css variables [pr 18 #4] (primary=#ba9d27 accent=#c34892 bg=#de263e)
 - 2026-06-18 09:36:50 - style: tweak theme palette [pr 19 #1] (primary=#d4364c accent=#ecef70 bg=#3bd085)
 - 2026-06-18 09:36:51 - docs: update changelog entry [pr 19 #2] (primary=#aa2693 accent=#4890ff bg=#7f241c)
+- 2026-06-18 09:36:51 - style: tweak theme palette [pr 19 #3] (primary=#d538bc accent=#6f04b9 bg=#ffa986)
 <!-- changelog:end -->
