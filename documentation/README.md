@@ -1151,4 +1151,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-19 09:08:50 - refactor: bump css variables [pr 11 #3] (primary=#f17e8f accent=#1e79c1 bg=#cc852c)
 - 2026-06-19 09:08:51 - refactor: bump css variables [pr 11 #4] (primary=#06e120 accent=#6561ce bg=#40b284)
 - 2026-06-19 09:09:05 - chore: rotate color scheme [pr 12 #1] (primary=#3aed13 accent=#e0a99f bg=#7127d4)
+- 2026-06-19 09:09:06 - refactor: bump css variables [pr 12 #2] (primary=#4dc3df accent=#390511 bg=#6260ff)
 <!-- changelog:end -->
