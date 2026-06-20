@@ -1243,4 +1243,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-20 08:36:07 - style: adjust accent color [pr 09 #3] (primary=#7985f3 accent=#899995 bg=#6037f6)
 - 2026-06-20 08:36:07 - chore: rotate color scheme [pr 09 #4] (primary=#9fc950 accent=#85660e bg=#7559b4)
 - 2026-06-20 08:36:20 - style: adjust accent color [pr 10 #1] (primary=#10b36a accent=#877aa3 bg=#c880b4)
+- 2026-06-20 08:36:20 - docs: note theme change [pr 10 #2] (primary=#a3ffaa accent=#359f44 bg=#8f232c)
 <!-- changelog:end -->
