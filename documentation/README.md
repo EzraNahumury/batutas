@@ -1249,4 +1249,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-20 08:36:35 - docs: update changelog entry [pr 11 #1] (primary=#86f4c1 accent=#634cab bg=#c17cba)
 - 2026-06-20 08:36:35 - style: restyle button hover [pr 11 #2] (primary=#0a4583 accent=#584418 bg=#220f6f)
 - 2026-06-20 08:36:35 - chore: rotate color scheme [pr 11 #3] (primary=#926e3b accent=#1bb538 bg=#29a444)
+- 2026-06-20 08:36:36 - style: tweak theme palette [pr 11 #4] (primary=#75d21e accent=#29417f bg=#0c7750)
 <!-- changelog:end -->
