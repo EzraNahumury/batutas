@@ -1269,4 +1269,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-20 08:37:49 - style: adjust accent color [pr 16 #1] (primary=#b77a68 accent=#9b8269 bg=#52831a)
 - 2026-06-20 08:37:49 - style: adjust accent color [pr 16 #2] (primary=#075911 accent=#15cc73 bg=#630fca)
 - 2026-06-20 08:37:49 - style: tweak theme palette [pr 16 #3] (primary=#cf2e33 accent=#6b9ce6 bg=#511c42)
+- 2026-06-20 08:37:50 - style: adjust accent color [pr 16 #4] (primary=#754581 accent=#6c5511 bg=#642146)
 <!-- changelog:end -->
