@@ -1285,4 +1285,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-20 08:38:46 - refactor: bump css variables [pr 20 #1] (primary=#604d09 accent=#d6a650 bg=#75adf1)
 - 2026-06-20 08:38:46 - docs: note theme change [pr 20 #2] (primary=#a7b95d accent=#7e92bb bg=#c0670e)
 - 2026-06-20 08:38:46 - refactor: bump css variables [pr 20 #3] (primary=#c8323a accent=#8af152 bg=#540b60)
+- 2026-06-20 08:38:46 - style: adjust accent color [pr 20 #4] (primary=#bc7d4c accent=#de5558 bg=#78a189)
 <!-- changelog:end -->
