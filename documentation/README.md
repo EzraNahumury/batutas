@@ -1278,4 +1278,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-20 08:38:18 - chore: refresh design tokens [pr 18 #2] (primary=#daacbe accent=#9dc7a5 bg=#e60582)
 - 2026-06-20 08:38:18 - chore: refresh design tokens [pr 18 #3] (primary=#95ede9 accent=#996912 bg=#c9b80f)
 - 2026-06-20 08:38:19 - refactor: bump css variables [pr 18 #4] (primary=#1a13c8 accent=#e7c276 bg=#803d4c)
+- 2026-06-20 08:38:32 - refactor: bump css variables [pr 19 #1] (primary=#506241 accent=#2afd76 bg=#60e766)
+- 2026-06-20 08:38:32 - style: restyle button hover [pr 19 #2] (primary=#0ce003 accent=#910061 bg=#13e80a)
+- 2026-06-20 08:38:32 - docs: update changelog entry [pr 19 #3] (primary=#beec69 accent=#13c340 bg=#cd388c)
+- 2026-06-20 08:38:32 - style: adjust accent color [pr 19 #4] (primary=#0a2119 accent=#8fd5e5 bg=#5bf479)
 <!-- changelog:end -->
