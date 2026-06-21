@@ -1381,4 +1381,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-21 13:51:46 - chore: rotate color scheme [pr 19 #1] (primary=#1ef547 accent=#948764 bg=#04e085)
 - 2026-06-21 13:51:46 - chore: rotate color scheme [pr 19 #2] (primary=#38e118 accent=#68fa42 bg=#7e4f2c)
 - 2026-06-21 13:51:46 - style: adjust accent color [pr 19 #3] (primary=#7c9510 accent=#d6b2aa bg=#d182ea)
+- 2026-06-21 13:51:47 - style: restyle button hover [pr 19 #4] (primary=#bb076e accent=#61bd2c bg=#12ae4f)
 <!-- changelog:end -->
