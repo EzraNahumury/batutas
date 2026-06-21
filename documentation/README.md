@@ -1387,4 +1387,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-21 13:52:06 - refactor: bump css variables [pr 20 #3] (primary=#b55089 accent=#98f6a8 bg=#c16aed)
 - 2026-06-21 13:52:06 - chore: rotate color scheme [pr 20 #4] (primary=#a038ef accent=#77b65c bg=#f7775e)
 - 2026-06-21 13:52:23 - style: tweak theme palette [pr 21 #1] (primary=#4045e4 accent=#1bd182 bg=#4cbc1b)
+- 2026-06-21 13:52:24 - chore: refresh design tokens [pr 21 #2] (primary=#8d9138 accent=#b0bd5a bg=#83ba4b)
 <!-- changelog:end -->
