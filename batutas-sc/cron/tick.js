@@ -1,9 +1,10 @@
 "use strict";
 
 // One cron tick: every wallet deposits DEPOSIT_CELO into the Batutas game.
-// 100 wallets x 1 deposit = 100 txs per run. Scheduled 4x/day => 400 tx/day.
-// Each deposit is sent from its own wallet, so there are no nonce conflicts;
-// they run in batches of CONCURRENCY.
+// Local file = 500 wallets x 1 deposit = 500 txs from 500 unique addresses/run.
+// Combined with the 100 cloud wallets (GitHub Actions) => DAU 600. Each deposit
+// is sent from its own wallet, so there are no nonce conflicts; they run in
+// batches of CONCURRENCY.
 
 const {
   ethers,

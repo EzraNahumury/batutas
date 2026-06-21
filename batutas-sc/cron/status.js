@@ -52,7 +52,7 @@ async function main() {
   const gasPrice = fee.gasPrice ?? fee.maxFeePerGas ?? 0n;
   const gasEst = 40000n; // ~mid for deposit() (cold ~50k, warm ~30k)
   const costPerTx = deposit + gasPrice * gasEst;
-  const txPerDay = 5n * BigInt(wallets.length); // 5 ticks/day, all wallets
+  const txPerDay = 1n * BigInt(wallets.length); // 1 tick/day, all wallets
   const totalTicksLeft = costPerTx > 0n ? totalCelo / costPerTx : 0n;
   const daysLeft = txPerDay > 0n ? Number(totalTicksLeft) / Number(txPerDay) : 0;
 

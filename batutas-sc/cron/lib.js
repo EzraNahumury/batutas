@@ -18,7 +18,7 @@ const CONTRACT_ADDRESS =
 // Anything smaller mints 0 batutas and reverts with DepositTooSmall().
 const DEPOSIT_CELO = process.env.DEPOSIT_CELO || "0.001";
 const AMOUNT_PER_WALLET_CELO = process.env.AMOUNT_PER_WALLET_CELO || "1";
-const WALLET_COUNT = Number(process.env.WALLET_COUNT || 100);
+const WALLET_COUNT = Number(process.env.WALLET_COUNT || 500);
 const CONCURRENCY = Number(process.env.CONCURRENCY || 20);
 
 const SECRETS_DIR = path.join(__dirname, "secrets");

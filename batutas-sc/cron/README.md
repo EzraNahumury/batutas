@@ -1,11 +1,26 @@
 # Batutas activity cron
 
-Generates 100 wallets, funds each with CELO from a master wallet, then deposits
+Generates 500 wallets, funds each with CELO from a master wallet, then deposits
 `0.001 CELO` from every wallet into the deployed Batutas game on a schedule.
 
-- **100 wallets × 1 deposit = 100 tx per run**
-- **5 runs/day (every 288 min) = 500 tx/day**
+## DAU 600 = two paths (do not merge)
+
+| Path | Wallets | Where | Schedule |
+|------|---------|-------|----------|
+| Original | 100 | GitHub Actions (`WALLETS_JSON` secret) | 00:00 UTC |
+| New (this file) | 500 | Local Windows Task | 15:00 local |
+
+The original 100 private keys live only in the GitHub secret and on the machine
+that created them — they **cannot be read back** from the secret, so the two sets
+can't be combined into one file. Run them in parallel instead:
+**100 (cloud) + 500 (local) = 600 unique addresses/day = DAU 600.**
+
+- **500 unique local wallets × 1 deposit/day**
+- **1 run/day** is enough — every wallet transacts once. Extra runs reuse the
+  same wallets (no new DAU), only burn gas.
 - Target: `deposit()` on `0x18e3B8359ad9f6C926B53ED2D432CCdc576c3Ebf` (Celo mainnet)
+- ⚠️ Never overwrite the `WALLETS_JSON` secret — losing the old 100 keys drops
+  DAU back toward 500 and strands their on-chain funds.
 - `0.001 CELO` = exactly **1 batuta** (`WEI_PER_BATUTA = 1e18 / 1000`); anything
   smaller reverts with `DepositTooSmall()`.
 
@@ -23,24 +38,22 @@ Edit `.env` and set `FUNDER_PRIVATE_KEY` to the master wallet that holds the CEL
 
 ### Fund the master wallet first
 
-Distribution sends `1 CELO × 100 = 100 CELO` **plus gas**. A wallet holding
-*exactly* 100 CELO cannot cover gas, so either:
-
-- fund the master with **~100.2 CELO**, or
-- set `AMOUNT_PER_WALLET_CELO=0.99` in `.env` to fit inside 100 CELO.
+Distribution sends `AMOUNT_PER_WALLET_CELO × 500` **plus gas**. At the default
+`0.01` that is `5 CELO` + gas — enough for a short experiment (~3 ticks/wallet).
+Fund the master with **~5.2 CELO** (or scale up for a longer run).
 
 ## Run (one-time bootstrap)
 
 ```powershell
-npm run gen          # create 100 wallets -> secrets/wallets.json (keep secret!)
-npm run distribute   # master wallet sends 1 CELO to each of the 100 wallets
+npm run gen          # create 500 wallets -> secrets/wallets.json (keep secret!)
+npm run distribute   # master wallet sends 0.01 CELO to each of the 500 wallets
 npm run status       # verify balances before scheduling
 ```
 
 `npm run gen` refuses to overwrite an existing `secrets/wallets.json` — losing
 those keys means losing the CELO they hold.
 
-## Schedule (4× per day)
+## Schedule (1× per day)
 
 ```powershell
 # run as a user allowed to create scheduled tasks
@@ -48,9 +61,9 @@ those keys means losing the CELO they hold.
 schtasks /Run /TN BatutasCronTick   # fire one run immediately to test
 ```
 
-This creates task **BatutasCronTick** running `run-tick.ps1` every 288 minutes
-(4h48m → 5x/day = 500 tx/day). Output is appended to `logs\tick.log`.
-The machine must be powered on at trigger time.
+This creates task **BatutasCronTick** running `run-tick.ps1` daily at **15:00**
+(500 local wallets × 1 deposit = 500 unique addresses; +100 cloud = DAU 600).
+Output is appended to `logs\tick.log`. The machine must be powered on at 15:00.
 
 Manual single run:
 
@@ -58,10 +71,10 @@ Manual single run:
 npm run tick
 ```
 
-**Linux/server cron** equivalent (5x/day, every 288 min):
+**Linux/server cron** equivalent (1x/day at 00:00):
 
 ```cron
-*/288 * * * * cd /path/to/cron && /usr/bin/node tick.js >> logs/tick.log 2>&1
+0 0 * * * cd /path/to/cron && /usr/bin/node tick.js >> logs/tick.log 2>&1
 ```
 
 ## Runway — gas dominates, not the deposit
