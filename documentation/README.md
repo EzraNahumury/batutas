@@ -1310,4 +1310,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-21 13:47:04 - style: tweak theme palette [pr 01 #2] (primary=#1d39c8 accent=#dfc08d bg=#2fad7f)
 - 2026-06-21 13:47:05 - docs: update changelog entry [pr 01 #3] (primary=#f68acf accent=#7bdbf9 bg=#e428c6)
 - 2026-06-21 13:47:05 - refactor: bump css variables [pr 01 #4] (primary=#f597fa accent=#2b0415 bg=#b2be3b)
+- 2026-06-21 13:47:22 - style: tweak theme palette [pr 02 #1] (primary=#54ed92 accent=#2e6ce2 bg=#8f563d)
 <!-- changelog:end -->
