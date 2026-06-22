@@ -1520,4 +1520,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-22 08:42:53 - chore: refresh design tokens [pr 22 #4] (primary=#21e040 accent=#20583e bg=#b2c5ee)
 - 2026-06-22 08:43:10 - style: tweak theme palette [pr 23 #1] (primary=#e80210 accent=#da713e bg=#2dc468)
 - 2026-06-22 08:43:11 - refactor: bump css variables [pr 23 #2] (primary=#469a2d accent=#bd00ef bg=#b0294e)
+- 2026-06-22 08:43:11 - docs: update changelog entry [pr 23 #3] (primary=#db344b accent=#88fa92 bg=#0e3a23)
 <!-- changelog:end -->
