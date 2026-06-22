@@ -1506,4 +1506,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-22 08:42:06 - style: restyle button hover [pr 19 #2] (primary=#f74aa2 accent=#1e4b2c bg=#b0e9ce)
 - 2026-06-22 08:42:06 - docs: note theme change [pr 19 #3] (primary=#5e7bce accent=#d076df bg=#735ef7)
 - 2026-06-22 08:42:06 - refactor: bump css variables [pr 19 #4] (primary=#331b0b accent=#fe7c65 bg=#de36f6)
+- 2026-06-22 08:42:21 - style: adjust accent color [pr 20 #1] (primary=#be5e83 accent=#1a0f7e bg=#3c68f0)
+- 2026-06-22 08:42:21 - refactor: bump css variables [pr 20 #2] (primary=#56ff8f accent=#34de84 bg=#e51ddd)
+- 2026-06-22 08:42:21 - chore: rotate color scheme [pr 20 #3] (primary=#baad2c accent=#8a6a6f bg=#f80122)
+- 2026-06-22 08:42:21 - docs: update changelog entry [pr 20 #4] (primary=#7b3fff accent=#7b875e bg=#31880b)
 <!-- changelog:end -->
