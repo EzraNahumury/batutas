@@ -1514,4 +1514,8 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-22 08:42:36 - style: tweak theme palette [pr 21 #2] (primary=#f7fd2a accent=#5ddb19 bg=#e50129)
 - 2026-06-22 08:42:36 - chore: refresh design tokens [pr 21 #3] (primary=#c50196 accent=#6b12b8 bg=#cc1b39)
 - 2026-06-22 08:42:36 - style: restyle button hover [pr 21 #4] (primary=#541847 accent=#620920 bg=#71f91d)
+- 2026-06-22 08:42:52 - chore: refresh design tokens [pr 22 #1] (primary=#ad413c accent=#0d7748 bg=#96987d)
+- 2026-06-22 08:42:52 - refactor: bump css variables [pr 22 #2] (primary=#642f90 accent=#3bae0d bg=#824408)
+- 2026-06-22 08:42:53 - chore: rotate color scheme [pr 22 #3] (primary=#6ccb17 accent=#f34875 bg=#0baaa8)
+- 2026-06-22 08:42:53 - chore: refresh design tokens [pr 22 #4] (primary=#21e040 accent=#20583e bg=#b2c5ee)
 <!-- changelog:end -->
