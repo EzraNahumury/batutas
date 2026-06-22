@@ -1426,4 +1426,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-22 08:33:58 - chore: rotate color scheme [pr 05 #2] (primary=#e2eca8 accent=#db2ffa bg=#fe2091)
 - 2026-06-22 08:33:58 - chore: rotate color scheme [pr 05 #3] (primary=#8b78a9 accent=#0a763e bg=#c61366)
 - 2026-06-22 08:33:58 - chore: refresh design tokens [pr 05 #4] (primary=#d0d55d accent=#3f33b6 bg=#c6a9fe)
+- 2026-06-22 08:34:13 - chore: rotate color scheme [pr 06 #1] (primary=#b2a87e accent=#833b66 bg=#145a93)
 <!-- changelog:end -->
