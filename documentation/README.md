@@ -1423,4 +1423,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-22 08:33:43 - docs: update changelog entry [pr 04 #3] (primary=#ae59a8 accent=#5caa4f bg=#d12905)
 - 2026-06-22 08:33:43 - refactor: bump css variables [pr 04 #4] (primary=#acfdf2 accent=#30a0f1 bg=#861880)
 - 2026-06-22 08:33:58 - refactor: bump css variables [pr 05 #1] (primary=#f8e4ff accent=#03af12 bg=#b75b4e)
+- 2026-06-22 08:33:58 - chore: rotate color scheme [pr 05 #2] (primary=#e2eca8 accent=#db2ffa bg=#fe2091)
 <!-- changelog:end -->
