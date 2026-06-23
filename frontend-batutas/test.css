@@ -1,8 +1,8 @@
 /* test.css — auto-tweaked theme tokens */
 :root {
-  --primary: #f8df30;
-  --accent: #fe6809;
-  --bg: #720aca;
+  --primary: #34693c;
+  --accent: #c916a4;
+  --bg: #6095dc;
   --text: #f8fafc;
   --radius: 12px;
 }
