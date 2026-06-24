@@ -1689,4 +1689,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-24 11:25:57 - style: restyle button hover [pr 15 #1] (primary=#091454 accent=#c9a327 bg=#3fae3a)
 - 2026-06-24 11:25:57 - style: adjust accent color [pr 15 #2] (primary=#bf6bd5 accent=#d8be0e bg=#daa1fb)
 - 2026-06-24 11:25:57 - docs: update changelog entry [pr 15 #3] (primary=#417e59 accent=#260b43 bg=#070243)
+- 2026-06-24 11:25:57 - chore: refresh design tokens [pr 15 #4] (primary=#61ef89 accent=#b954d7 bg=#2e2027)
 <!-- changelog:end -->
