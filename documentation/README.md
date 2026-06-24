@@ -1703,4 +1703,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-24 11:26:35 - docs: update changelog entry [pr 18 #3] (primary=#e56e4c accent=#022e2e bg=#021eef)
 - 2026-06-24 11:26:35 - docs: note theme change [pr 18 #4] (primary=#846cdf accent=#b9b63c bg=#c8e30f)
 - 2026-06-24 11:26:47 - docs: note theme change [pr 19 #1] (primary=#6872ee accent=#a9ad89 bg=#7a3cc9)
+- 2026-06-24 11:26:47 - style: tweak theme palette [pr 19 #2] (primary=#a2d36a accent=#c2a77a bg=#ec862b)
 <!-- changelog:end -->
