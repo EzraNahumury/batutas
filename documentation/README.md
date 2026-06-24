@@ -1707,4 +1707,5 @@ Living notes for the **batutas** project. This file is updated automatically by 
 - 2026-06-24 11:26:47 - style: adjust accent color [pr 19 #3] (primary=#a41095 accent=#6ef2c9 bg=#eb1da7)
 - 2026-06-24 11:26:47 - docs: update changelog entry [pr 19 #4] (primary=#5c4b3c accent=#65fd21 bg=#c545dc)
 - 2026-06-24 11:27:01 - refactor: bump css variables [pr 20 #1] (primary=#aaa09d accent=#9aee08 bg=#175f35)
+- 2026-06-24 11:27:01 - style: restyle button hover [pr 20 #2] (primary=#e28c2e accent=#175c86 bg=#a55503)
 <!-- changelog:end -->
